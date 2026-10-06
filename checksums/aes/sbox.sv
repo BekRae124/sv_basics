@@ -1,142 +1,531 @@
-`timescale 1ns / 1ps
-module sbox(
-    input  [7:0] data_i,
-    output [7:0] data_o
-    );
+// `timescale 1ns / 1ps
+// module sbox (
+//     input  logic [7:0] in,
+//     output logic [7:0] out
+// );
 
-    //this can be written as a lookup or a transformation
-    // Logic vs space tradeoff try both 
+//     //this can be written as a lookup or a transformation
+//     // Logic vs space tradeoff try both 
 
-	wire[0:7] s, x;
+// 	// wire[0:7] s, x;
+// 	// wire[7:0] s, x;
 
-	wire [21:1] y;
-	wire [67:0] t;
-	wire [17:0] z;
+// 	// wire [21:1] y;
+// 	// wire [67:0] t;
+// 	// wire [17:0] z;
 	
-	// input
-	assign x = data_i;
+// 	// // input
+// 	// assign x = in;
 	
-	// aes sbox on a byte
-	assign y[14] = x[3]  ^ x[5];
-	assign y[13] = x[0]  ^ x[6];
-	assign y[9]  = x[0]  ^ x[3];
-	assign y[8]  = x[0]  ^ x[5];
-	assign t[0]  = x[1]  ^ x[2];
-	assign y[1]  = t[0]  ^ x[7];
-	assign y[4]  = y[1]  ^ x[3];
-	assign y[12] = y[13] ^ y[14];
-	assign y[2]  = y[1]  ^ x[0];
-	assign y[5]  = y[1]  ^ x[6];
-	assign y[3]  = y[5]  ^ y[8];
-	assign t[1]  = x[4]  ^ y[12];
-	assign y[15] = t[1]  ^ x[5];
-	assign y[20] = t[1]  ^ x[1];
-	assign y[6]  = y[15] ^ x[7];
-	assign y[10] = y[15] ^ t[0];
-	assign y[11] = y[20] ^ y[9];
-	assign y[7]  = x[7]  ^ y[11];
-	assign y[17] = y[10] ^ y[11];
-	assign y[19] = y[10] ^ y[8];
-	assign y[16] = t[0]  ^ y[11];
-	assign y[21] = y[13] ^ y[16];
-	assign y[18] = x[0]  ^ y[16];
+// 	// // aes sbox on a byte
+// 	// assign y[14] = x[3]  ^ x[5];
+// 	// assign y[13] = x[0]  ^ x[6];
+// 	// assign y[9]  = x[0]  ^ x[3];
+// 	// assign y[8]  = x[0]  ^ x[5];
+// 	// assign t[0]  = x[1]  ^ x[2];
+// 	// assign y[1]  = t[0]  ^ x[7];
+// 	// assign y[4]  = y[1]  ^ x[3];
+// 	// assign y[12] = y[13] ^ y[14];
+// 	// assign y[2]  = y[1]  ^ x[0];
+// 	// assign y[5]  = y[1]  ^ x[6];
+// 	// assign y[3]  = y[5]  ^ y[8];
+// 	// assign t[1]  = x[4]  ^ y[12];
+// 	// assign y[15] = t[1]  ^ x[5];
+// 	// assign y[20] = t[1]  ^ x[1];
+// 	// assign y[6]  = y[15] ^ x[7];
+// 	// assign y[10] = y[15] ^ t[0];
+// 	// assign y[11] = y[20] ^ y[9];
+// 	// assign y[7]  = x[7]  ^ y[11];
+// 	// assign y[17] = y[10] ^ y[11];
+// 	// assign y[19] = y[10] ^ y[8];
+// 	// assign y[16] = t[0]  ^ y[11];
+// 	// assign y[21] = y[13] ^ y[16];
+// 	// assign y[18] = x[0]  ^ y[16];
 	
-	assign t[2]  = y[12] & y[15];
-	assign t[3]  = y[3]  & y[6];
-	assign t[4]  = t[3]  ^ t[2];
-	assign t[5]  = y[4]  & x[7];
-	assign t[6]  = t[5]  ^ t[2]; 
-	assign t[7]  = y[13] & y[16];
-	assign t[8]  = y[5]  & y[1];
-	assign t[9]  = t[8]  ^ t[7];
-	assign t[10] = y[2]  & y[7];
-	assign t[11] = t[10] ^ t[7];
-	assign t[12] = y[9]  & y[11];
-	assign t[13] = y[14] & y[17];
-	assign t[14] = t[13] ^ t[12];
-	assign t[15] = y[8]  & y[10];
-	assign t[16] = t[15] ^ t[12];
-	assign t[17] = t[4]  ^ t[14];
-	assign t[18] = t[6]  ^ t[16];
-	assign t[19] = t[9]  ^ t[14];
-	assign t[20] = t[11] ^ t[16];
-	assign t[21] = t[17] ^ y[20];
-	assign t[22] = t[18] ^ y[19];
-	assign t[23] = t[19] ^ y[21];
-	assign t[24] = t[20] ^ y[18];
+// 	// assign t[2]  = y[12] & y[15];
+// 	// assign t[3]  = y[3]  & y[6];
+// 	// assign t[4]  = t[3]  ^ t[2];
+// 	// assign t[5]  = y[4]  & x[7];
+// 	// assign t[6]  = t[5]  ^ t[2]; 
+// 	// assign t[7]  = y[13] & y[16];
+// 	// assign t[8]  = y[5]  & y[1];
+// 	// assign t[9]  = t[8]  ^ t[7];
+// 	// assign t[10] = y[2]  & y[7];
+// 	// assign t[11] = t[10] ^ t[7];
+// 	// assign t[12] = y[9]  & y[11];
+// 	// assign t[13] = y[14] & y[17];
+// 	// assign t[14] = t[13] ^ t[12];
+// 	// assign t[15] = y[8]  & y[10];
+// 	// assign t[16] = t[15] ^ t[12];
+// 	// assign t[17] = t[4]  ^ t[14];
+// 	// assign t[18] = t[6]  ^ t[16];
+// 	// assign t[19] = t[9]  ^ t[14];
+// 	// assign t[20] = t[11] ^ t[16];
+// 	// assign t[21] = t[17] ^ y[20];
+// 	// assign t[22] = t[18] ^ y[19];
+// 	// assign t[23] = t[19] ^ y[21];
+// 	// assign t[24] = t[20] ^ y[18];
 	
-	assign t[25] = t[21] ^ t[22];
-	assign t[26] = t[21] & t[23];
-	assign t[27] = t[24] ^ t[26];
-	assign t[28] = t[25] & t[27]; 
-	assign t[29] = t[28] ^ t[22];
-	assign t[30] = t[23] ^ t[24];
-	assign t[31] = t[22] ^ t[26];
-	assign t[32] = t[31] & t[30];
-	assign t[33] = t[32] ^ t[24];
-	assign t[34] = t[23] ^ t[33];
-	assign t[35] = t[27] ^ t[33];
-	assign t[36] = t[24] & t[35]; 
-	assign t[37] = t[36] ^ t[34];
-	assign t[38] = t[27] ^ t[36];
-	assign t[39] = t[29] & t[38];
-	assign t[40] = t[25] ^ t[39];
+// 	// assign t[25] = t[21] ^ t[22];
+// 	// assign t[26] = t[21] & t[23];
+// 	// assign t[27] = t[24] ^ t[26];
+// 	// assign t[28] = t[25] & t[27]; 
+// 	// assign t[29] = t[28] ^ t[22];
+// 	// assign t[30] = t[23] ^ t[24];
+// 	// assign t[31] = t[22] ^ t[26];
+// 	// assign t[32] = t[31] & t[30];
+// 	// assign t[33] = t[32] ^ t[24];
+// 	// assign t[34] = t[23] ^ t[33];
+// 	// assign t[35] = t[27] ^ t[33];
+// 	// assign t[36] = t[24] & t[35]; 
+// 	// assign t[37] = t[36] ^ t[34];
+// 	// assign t[38] = t[27] ^ t[36];
+// 	// assign t[39] = t[29] & t[38];
+// 	// assign t[40] = t[25] ^ t[39];
 	
-	assign t[41] = t[40] ^ t[37];
-	assign t[42] = t[29] ^ t[33];
-	assign t[43] = t[29] ^ t[40];
-	assign t[44] = t[33] ^ t[37];
-	assign t[45] = t[42] ^ t[41];
-	assign z[0]  = t[44] & y[15];
-	assign z[1]  = t[37] & y[6];
-	assign z[2]  = t[33] & x[7];
-	assign z[3]  = t[43] & y[16];
-	assign z[4]  = t[40] & y[1];
-	assign z[5]  = t[29] & y[7];
-	assign z[6]  = t[42] & y[11];
-	assign z[7]  = t[45] & y[17];
-	assign z[8]  = t[41] & y[10];
-	assign z[9]  = t[44] & y[12];
-	assign z[10] = t[37] & y[3];
-	assign z[11] = t[33] & y[4];
-	assign z[12] = t[43] & y[13];
-	assign z[13] = t[40] & y[5];
-	assign z[14] = t[29] & y[2];
-	assign z[15] = t[42] & y[9];
-	assign z[16] = t[45] & y[14];
-	assign z[17] = t[41] & y[8];
+// 	// assign t[41] = t[40] ^ t[37];
+// 	// assign t[42] = t[29] ^ t[33];
+// 	// assign t[43] = t[29] ^ t[40];
+// 	// assign t[44] = t[33] ^ t[37];
+// 	// assign t[45] = t[42] ^ t[41];
+// 	// assign z[0]  = t[44] & y[15];
+// 	// assign z[1]  = t[37] & y[6];
+// 	// assign z[2]  = t[33] & x[7];
+// 	// assign z[3]  = t[43] & y[16];
+// 	// assign z[4]  = t[40] & y[1];
+// 	// assign z[5]  = t[29] & y[7];
+// 	// assign z[6]  = t[42] & y[11];
+// 	// assign z[7]  = t[45] & y[17];
+// 	// assign z[8]  = t[41] & y[10];
+// 	// assign z[9]  = t[44] & y[12];
+// 	// assign z[10] = t[37] & y[3];
+// 	// assign z[11] = t[33] & y[4];
+// 	// assign z[12] = t[43] & y[13];
+// 	// assign z[13] = t[40] & y[5];
+// 	// assign z[14] = t[29] & y[2];
+// 	// assign z[15] = t[42] & y[9];
+// 	// assign z[16] = t[45] & y[14];
+// 	// assign z[17] = t[41] & y[8];
 	
-	assign t[46] = z[15] ^ z[16];
-	assign t[47] = z[10] ^ z[11];
-	assign t[48] = z[5]  ^ z[13];
-	assign t[49] = z[9]  ^ z[10];
-	assign t[50] = z[2]  ^ z[12];
-	assign t[51] = z[2]  ^ z[5];
-	assign t[52] = z[7]  ^ z[8];
-	assign t[53] = z[0]  ^ z[3];
-	assign t[54] = z[6]  ^ z[7];
-	assign t[55] = z[16] ^ z[17];
-	assign t[56] = z[12] ^ t[48];
-	assign t[57] = t[50] ^ t[53];
-	assign t[58] = z[4]  ^ t[46];
-	assign t[59] = z[3]  ^ t[54];
-	assign t[60] = t[46] ^ t[57];
-	assign t[61] = z[14] ^ t[57];
-	assign t[62] = t[52] ^ t[58];
-	assign t[63] = t[49] ^ t[58];
-	assign t[64] = z[4]  ^ t[59];
-	assign t[65] = t[61] ^ t[62];
-	assign t[66] = z[1]  ^ t[63];
-	assign s[0]  = t[59] ^ t[63];
-	assign s[6]  = ~t[56] ^ t[62]; 
-	assign s[7]  = ~t[48] ^ t[60]; 
-	assign t[67] = t[64]  ^ t[65];
-	assign s[3]  = t[53]  ^ t[66];
-	assign s[4]  = t[51]  ^ t[66];
-	assign s[5]  = t[47]  ^ t[65];
-	assign s[1]  = ~t[64] ^ s[3]; 
-	assign s[2]  = ~t[55] ^ t[67]; 
+// 	// assign t[46] = z[15] ^ z[16];
+// 	// assign t[47] = z[10] ^ z[11];
+// 	// assign t[48] = z[5]  ^ z[13];
+// 	// assign t[49] = z[9]  ^ z[10];
+// 	// assign t[50] = z[2]  ^ z[12];
+// 	// assign t[51] = z[2]  ^ z[5];
+// 	// assign t[52] = z[7]  ^ z[8];
+// 	// assign t[53] = z[0]  ^ z[3];
+// 	// assign t[54] = z[6]  ^ z[7];
+// 	// assign t[55] = z[16] ^ z[17];
+// 	// assign t[56] = z[12] ^ t[48];
+// 	// assign t[57] = t[50] ^ t[53];
+// 	// assign t[58] = z[4]  ^ t[46];
+// 	// assign t[59] = z[3]  ^ t[54];
+// 	// assign t[60] = t[46] ^ t[57];
+// 	// assign t[61] = z[14] ^ t[57];
+// 	// assign t[62] = t[52] ^ t[58];
+// 	// assign t[63] = t[49] ^ t[58];
+// 	// assign t[64] = z[4]  ^ t[59];
+// 	// assign t[65] = t[61] ^ t[62];
+// 	// assign t[66] = z[1]  ^ t[63];
+// 	// assign s[0]  = t[59] ^ t[63];
+// 	// assign s[6]  = ~t[56] ^ t[62]; 
+// 	// assign s[7]  = ~t[48] ^ t[60]; 
+// 	// assign t[67] = t[64]  ^ t[65];
+// 	// assign s[3]  = t[53]  ^ t[66];
+// 	// assign s[4]  = t[51]  ^ t[66];
+// 	// assign s[5]  = t[47]  ^ t[65];
+// 	// assign s[1]  = ~t[64] ^ s[3]; 
+// 	// assign s[2]  = ~t[55] ^ t[67]; 
 	
-	// output 
-	assign data_o = s;
+// 	// // output 
+// 	// assign out = s;
+// //lookup version
+
+//     always_comb begin
+//         case (in)
+//             8'h00: out = 8'h63;
+//             8'h01: out = 8'h7C;
+//             8'h02: out = 8'h77;
+//             8'h03: out = 8'h7B;
+//             8'h04: out = 8'hF2;
+//             8'h05: out = 8'h6B;
+//             8'h06: out = 8'h6F;
+//             8'h07: out = 8'hC5;
+//             8'h08: out = 8'h30;
+//             8'h09: out = 8'h01;
+//             8'h0A: out = 8'h67;
+//             8'h0B: out = 8'h2B;
+//             8'h0C: out = 8'hFE;
+//             8'h0D: out = 8'hD7;
+//             8'h0E: out = 8'hAB;
+//             8'h0F: out = 8'h76;
+
+//             8'h10: out = 8'hCA;
+//             8'h11: out = 8'h82;
+//             8'h12: out = 8'hC9;
+//             8'h13: out = 8'h7D;
+//             8'h14: out = 8'hFA;
+//             8'h15: out = 8'h59;
+//             8'h16: out = 8'h47;
+//             8'h17: out = 8'hF0;
+//             8'h18: out = 8'hAD;
+//             8'h19: out = 8'hD4;
+//             8'h1A: out = 8'hA2;
+//             8'h1B: out = 8'hAF;
+//             8'h1C: out = 8'h9C;
+//             8'h1D: out = 8'hA4;
+//             8'h1E: out = 8'h72;
+//             8'h1F: out = 8'hC0;
+
+//             8'h20: out = 8'hB7;
+//             8'h21: out = 8'hFD;
+//             8'h22: out = 8'h93;
+//             8'h23: out = 8'h26;
+//             8'h24: out = 8'h36;
+//             8'h25: out = 8'h3F;
+//             8'h26: out = 8'hF7;
+//             8'h27: out = 8'hCC;
+//             8'h28: out = 8'h34;
+//             8'h29: out = 8'hA5;
+//             8'h2A: out = 8'hE5;
+//             8'h2B: out = 8'hF1;
+//             8'h2C: out = 8'h71;
+//             8'h2D: out = 8'hD8;
+//             8'h2E: out = 8'h31;
+//             8'h2F: out = 8'h15;
+
+//             8'h30: out = 8'h04;
+//             8'h31: out = 8'hC7;
+//             8'h32: out = 8'h23;
+//             8'h33: out = 8'hC3;
+//             8'h34: out = 8'h18;
+//             8'h35: out = 8'h96;
+//             8'h36: out = 8'h05;
+//             8'h37: out = 8'h9A;
+//             8'h38: out = 8'h07;
+//             8'h39: out = 8'h12;
+//             8'h3A: out = 8'h80;
+//             8'h3B: out = 8'hE2;
+//             8'h3C: out = 8'hEB;
+//             8'h3D: out = 8'h27;
+//             8'h3E: out = 8'hB2;
+//             8'h3F: out = 8'h75;
+
+//             8'h40: out = 8'h09;
+//             8'h41: out = 8'h83;
+//             8'h42: out = 8'h2C;
+//             8'h43: out = 8'h1A;
+//             8'h44: out = 8'h1B;
+//             8'h45: out = 8'h6E;
+//             8'h46: out = 8'h5A;
+//             8'h47: out = 8'hA0;
+//             8'h48: out = 8'h52;
+//             8'h49: out = 8'h3B;
+//             8'h4A: out = 8'hD6;
+//             8'h4B: out = 8'hB3;
+//             8'h4C: out = 8'h29;
+//             8'h4D: out = 8'hE3;
+//             8'h4E: out = 8'h2F;
+//             8'h4F: out = 8'h84;
+
+//             8'h50: out = 8'h53;
+//             8'h51: out = 8'hD1;
+//             8'h52: out = 8'h00;
+//             8'h53: out = 8'hED;
+//             8'h54: out = 8'h20;
+//             8'h55: out = 8'hFC;
+//             8'h56: out = 8'hB1;
+//             8'h57: out = 8'h5B;
+//             8'h58: out = 8'h6A;
+//             8'h59: out = 8'hCB;
+//             8'h5A: out = 8'hBE;
+//             8'h5B: out = 8'h39;
+//             8'h5C: out = 8'h4A;
+//             8'h5D: out = 8'h4C;
+//             8'h5E: out = 8'h58;
+//             8'h5F: out = 8'hCF;
+
+//             8'h60: out = 8'hD0;
+//             8'h61: out = 8'hEF;
+//             8'h62: out = 8'hAA;
+//             8'h63: out = 8'hFB;
+//             8'h64: out = 8'h43;
+//             8'h65: out = 8'h4D;
+//             8'h66: out = 8'h33;
+//             8'h67: out = 8'h85;
+//             8'h68: out = 8'h45;
+//             8'h69: out = 8'hF9;
+//             8'h6A: out = 8'h02;
+//             8'h6B: out = 8'h7F;
+//             8'h6C: out = 8'h50;
+//             8'h6D: out = 8'h3C;
+//             8'h6E: out = 8'h9F;
+//             8'h6F: out = 8'hA8;
+
+//             8'h70: out = 8'h51;
+//             8'h71: out = 8'hA3;
+//             8'h72: out = 8'h40;
+//             8'h73: out = 8'h8F;
+//             8'h74: out = 8'h92;
+//             8'h75: out = 8'h9D;
+//             8'h76: out = 8'h38;
+//             8'h77: out = 8'hF5;
+//             8'h78: out = 8'hBC;
+//             8'h79: out = 8'hB6;
+//             8'h7A: out = 8'hDA;
+//             8'h7B: out = 8'h21;
+//             8'h7C: out = 8'h10;
+//             8'h7D: out = 8'hFF;
+//             8'h7E: out = 8'hF3;
+//             8'h7F: out = 8'hD2;
+
+//             8'h80: out = 8'hCD;
+//             8'h81: out = 8'h0C;
+//             8'h82: out = 8'h13;
+//             8'h83: out = 8'hEC;
+//             8'h84: out = 8'h5F;
+//             8'h85: out = 8'h97;
+//             8'h86: out = 8'h44;
+//             8'h87: out = 8'h17;
+//             8'h88: out = 8'hC4;
+//             8'h89: out = 8'hA7;
+//             8'h8A: out = 8'h7E;
+//             8'h8B: out = 8'h3D;
+//             8'h8C: out = 8'h64;
+//             8'h8D: out = 8'h5D;
+//             8'h8E: out = 8'h19;
+//             8'h8F: out = 8'h73;
+
+//             8'h90: out = 8'h60;
+//             8'h91: out = 8'h81;
+//             8'h92: out = 8'h4F;
+//             8'h93: out = 8'hDC;
+//             8'h94: out = 8'h22;
+//             8'h95: out = 8'h2A;
+//             8'h96: out = 8'h90;
+//             8'h97: out = 8'h88;
+//             8'h98: out = 8'h46;
+//             8'h99: out = 8'hEE;
+//             8'h9A: out = 8'hB8;
+//             8'h9B: out = 8'h14;
+//             8'h9C: out = 8'hDE;
+//             8'h9D: out = 8'h5E;
+//             8'h9E: out = 8'h0B;
+//             8'h9F: out = 8'hDB;
+
+//             8'hA0: out = 8'hE0;
+//             8'hA1: out = 8'h32;
+//             8'hA2: out = 8'h3A;
+//             8'hA3: out = 8'h0A;
+//             8'hA4: out = 8'h49;
+//             8'hA5: out = 8'h06;
+//             8'hA6: out = 8'h24;
+//             8'hA7: out = 8'h5C;
+//             8'hA8: out = 8'hC2;
+//             8'hA9: out = 8'hD3;
+//             8'hAA: out = 8'hAC;
+//             8'hAB: out = 8'h62;
+//             8'hAC: out = 8'h91;
+//             8'hAD: out = 8'h95;
+//             8'hAE: out = 8'hE4;
+//             8'hAF: out = 8'h79;
+
+//             8'hB0: out = 8'hE7;
+//             8'hB1: out = 8'hC8;
+//             8'hB2: out = 8'h37;
+//             8'hB3: out = 8'h6D;
+//             8'hB4: out = 8'h8D;
+//             8'hB5: out = 8'hD5;
+//             8'hB6: out = 8'h4E;
+//             8'hB7: out = 8'hA9;
+//             8'hB8: out = 8'h6C;
+//             8'hB9: out = 8'h56;
+//             8'hBA: out = 8'hF4;
+//             8'hBB: out = 8'hEA;
+//             8'hBC: out = 8'h65;
+//             8'hBD: out = 8'h7A;
+//             8'hBE: out = 8'hAE;
+//             8'hBF: out = 8'h08;
+
+//             8'hC0: out = 8'hBA;
+//             8'hC1: out = 8'h78;
+//             8'hC2: out = 8'h25;
+//             8'hC3: out = 8'h2E;
+//             8'hC4: out = 8'h1C;
+//             8'hC5: out = 8'hA6;
+//             8'hC6: out = 8'hB4;
+//             8'hC7: out = 8'hC6;
+//             8'hC8: out = 8'hE8;
+//             8'hC9: out = 8'hDD;
+//             8'hCA: out = 8'h74;
+//             8'hCB: out = 8'h1F;
+//             8'hCC: out = 8'h4B;
+//             8'hCD: out = 8'hBD;
+//             8'hCE: out = 8'h8B;
+//             8'hCF: out = 8'h8A;
+
+//             8'hD0: out = 8'h70;
+//             8'hD1: out = 8'h3E;
+//             8'hD2: out = 8'hB5;
+//             8'hD3: out = 8'h66;
+//             8'hD4: out = 8'h48;
+//             8'hD5: out = 8'h03;
+//             8'hD6: out = 8'hF6;
+//             8'hD7: out = 8'h0E;
+//             8'hD8: out = 8'h61;
+//             8'hD9: out = 8'h35;
+//             8'hDA: out = 8'h57;
+//             8'hDB: out = 8'hB9;
+//             8'hDC: out = 8'h86;
+//             8'hDD: out = 8'hC1;
+//             8'hDE: out = 8'h1D;
+//             8'hDF: out = 8'h9E;
+
+//             8'hE0: out = 8'hE1;
+//             8'hE1: out = 8'hF8;
+//             8'hE2: out = 8'h98;
+//             8'hE3: out = 8'h11;
+//             8'hE4: out = 8'h69;
+//             8'hE5: out = 8'hD9;
+//             8'hE6: out = 8'h8E;
+//             8'hE7: out = 8'h94;
+//             8'hE8: out = 8'h9B;
+//             8'hE9: out = 8'h1E;
+//             8'hEA: out = 8'h87;
+//             8'hEB: out = 8'hE9;
+//             8'hEC: out = 8'hCE;
+//             8'hED: out = 8'h55;
+//             8'hEE: out = 8'h28;
+//             8'hEF: out = 8'hDF;
+
+//             8'hF0: out = 8'h8C;
+//             8'hF1: out = 8'hA1;
+//             8'hF2: out = 8'h89;
+//             8'hF3: out = 8'h0D;
+//             8'hF4: out = 8'hBF;
+//             8'hF5: out = 8'hE6;
+//             8'hF6: out = 8'h42;
+//             8'hF7: out = 8'h68;
+//             8'hF8: out = 8'h41;
+//             8'hF9: out = 8'h99;
+//             8'hFA: out = 8'h2D;
+//             8'hFB: out = 8'h0F;
+//             8'hFC: out = 8'hB0;
+//             8'hFD: out = 8'h54;
+//             8'hFE: out = 8'hBB;
+//             8'hFF: out = 8'h16;
+
+//             default: out = 8'h00;
+//         endcase
+//     end
+
+
+module sbox (
+    input  logic [7:0] in,
+    output logic [7:0] out
+);
+
+    always_comb begin
+        case (in)
+            // Row 0x0_
+            8'h00: out = 8'h63; 8'h01: out = 8'h7c; 8'h02: out = 8'h77; 8'h03: out = 8'h7b;
+            8'h04: out = 8'hf2; 8'h05: out = 8'h6b; 8'h06: out = 8'h6f; 8'h07: out = 8'hc5;
+            8'h08: out = 8'h30; 8'h09: out = 8'h01; 8'h0a: out = 8'h67; 8'h0b: out = 8'h2b;
+            8'h0c: out = 8'hfe; 8'h0d: out = 8'hd7; 8'h0e: out = 8'hab; 8'h0f: out = 8'h76;
+
+            // Row 0x1_
+            8'h10: out = 8'hca; 8'h11: out = 8'h82; 8'h12: out = 8'hc9; 8'h13: out = 8'h7d;
+            8'h14: out = 8'hfa; 8'h15: out = 8'h59; 8'h16: out = 8'h47; 8'h17: out = 8'hf0;
+            8'h18: out = 8'had; 8'h19: out = 8'hd4; 8'h1a: out = 8'ha2; 8'h1b: out = 8'haf;
+            8'h1c: out = 8'h9c; 8'h1d: out = 8'ha4; 8'h1e: out = 8'h72; 8'h1f: out = 8'hc0;
+
+            // Row 0x2_
+            8'h20: out = 8'hb7; 8'h21: out = 8'hfd; 8'h22: out = 8'h93; 8'h23: out = 8'h26;
+            8'h24: out = 8'h36; 8'h25: out = 8'h3f; 8'h26: out = 8'hf7; 8'h27: out = 8'hcc;
+            8'h28: out = 8'h34; 8'h29: out = 8'ha5; 8'h2a: out = 8'he5; 8'h2b: out = 8'hf1;
+            8'h2c: out = 8'h71; 8'h2d: out = 8'hd8; 8'h2e: out = 8'h31; 8'h2f: out = 8'h15;
+
+            // Row 0x3_
+            8'h30: out = 8'h04; 8'h31: out = 8'hc7; 8'h32: out = 8'h23; 8'h33: out = 8'hc3;
+            8'h34: out = 8'h18; 8'h35: out = 8'h96; 8'h36: out = 8'h05; 8'h37: out = 8'h9a;
+            8'h38: out = 8'h07; 8'h39: out = 8'h12; 8'h3a: out = 8'h80; 8'h3b: out = 8'he2;
+            8'h3c: out = 8'heb; 8'h3d: out = 8'h27; 8'h3e: out = 8'hb2; 8'h3f: out = 8'h75;
+
+            // Row 0x4_
+            8'h40: out = 8'h09; 8'h41: out = 8'h83; 8'h42: out = 8'h2c; 8'h43: out = 8'h1a;
+            8'h44: out = 8'h1b; 8'h45: out = 8'h6e; 8'h46: out = 8'h5a; 8'h47: out = 8'ha0;
+            8'h48: out = 8'h52; 8'h49: out = 8'h3b; 8'h4a: out = 8'hd6; 8'h4b: out = 8'hb3;
+            8'h4c: out = 8'h29; 8'h4d: out = 8'he3; 8'h4e: out = 8'h2f; 8'h4f: out = 8'h84;
+
+            // Row 0x5_
+            8'h50: out = 8'h53; 8'h51: out = 8'hd1; 8'h52: out = 8'h00; 8'h53: out = 8'hed;
+            8'h54: out = 8'h20; 8'h55: out = 8'hfc; 8'h56: out = 8'hb1; 8'h57: out = 8'h5b;
+            8'h58: out = 8'h6a; 8'h59: out = 8'hcb; 8'h5a: out = 8'hbe; 8'h5b: out = 8'h39;
+            8'h5c: out = 8'h4a; 8'h5d: out = 8'h4c; 8'h5e: out = 8'h58; 8'h5f: out = 8'hcf;
+
+            // Row 0x6_
+            8'h60: out = 8'hd0; 8'h61: out = 8'hef; 8'h62: out = 8'haa; 8'h63: out = 8'hfb;
+            8'h64: out = 8'h43; 8'h65: out = 8'h4d; 8'h66: out = 8'h33; 8'h67: out = 8'h85;
+            8'h68: out = 8'h45; 8'h69: out = 8'hf9; 8'h6a: out = 8'h02; 8'h6b: out = 8'h7f;
+            8'h6c: out = 8'h50; 8'h6d: out = 8'h3c; 8'h6e: out = 8'h9f; 8'h6f: out = 8'ha8;
+
+            // Row 0x7_
+            8'h70: out = 8'h51; 8'h71: out = 8'ha3; 8'h72: out = 8'h40; 8'h73: out = 8'h8f;
+            8'h74: out = 8'h92; 8'h75: out = 8'h9d; 8'h76: out = 8'h38; 8'h77: out = 8'hf5;
+            8'h78: out = 8'hbc; 8'h79: out = 8'hb6; 8'h7a: out = 8'hda; 8'h7b: out = 8'h21;
+            8'h7c: out = 8'h10; 8'h7d: out = 8'hff; 8'h7e: out = 8'hf3; 8'h7f: out = 8'hd2;
+
+            // Row 0x8_
+            8'h80: out = 8'hcd; 8'h81: out = 8'h0c; 8'h82: out = 8'h13; 8'h83: out = 8'hec;
+            8'h84: out = 8'h5f; 8'h85: out = 8'h97; 8'h86: out = 8'h44; 8'h87: out = 8'h17;
+            8'h88: out = 8'hc4; 8'h89: out = 8'ha7; 8'h8a: out = 8'h7e; 8'h8b: out = 8'h3d;
+            8'h8c: out = 8'h64; 8'h8d: out = 8'h5d; 8'h8e: out = 8'h19; 8'h8f: out = 8'h73;
+
+            // Row 0x9_
+            8'h90: out = 8'h60; 8'h91: out = 8'h81; 8'h92: out = 8'h4f; 8'h93: out = 8'hdc;
+            8'h94: out = 8'h22; 8'h95: out = 8'h2a; 8'h96: out = 8'h90; 8'h97: out = 8'h88;
+            8'h98: out = 8'h46; 8'h99: out = 8'hee; 8'h9a: out = 8'hb8; 8'h9b: out = 8'h14;
+            8'h9c: out = 8'hde; 8'h9d: out = 8'h5e; 8'h9e: out = 8'h0b; 8'h9f: out = 8'hdb;
+
+            // Row 0xA_
+            8'ha0: out = 8'he0; 8'ha1: out = 8'h32; 8'ha2: out = 8'h3a; 8'ha3: out = 8'h0a;
+            8'ha4: out = 8'h49; 8'ha5: out = 8'h06; 8'ha6: out = 8'h24; 8'ha7: out = 8'h5c;
+            8'ha8: out = 8'hc2; 8'ha9: out = 8'hd3; 8'haa: out = 8'hac; 8'hab: out = 8'h62;
+            8'hac: out = 8'h91; 8'had: out = 8'h95; 8'hae: out = 8'he4; 8'haf: out = 8'h79;
+
+            // Row 0xB_
+            8'hb0: out = 8'he7; 8'hb1: out = 8'hc8; 8'hb2: out = 8'h37; 8'hb3: out = 8'h6d;
+            8'hb4: out = 8'h8d; 8'hb5: out = 8'hd5; 8'hb6: out = 8'h4e; 8'hb7: out = 8'ha9;
+            8'hb8: out = 8'h6c; 8'hb9: out = 8'h56; 8'hba: out = 8'hf4; 8'hbb: out = 8'hea;
+            8'hbc: out = 8'h65; 8'hbd: out = 8'h7a; 8'hbe: out = 8'hae; 8'hbf: out = 8'h08;
+
+            // Row 0xC_
+            8'hc0: out = 8'hba; 8'hc1: out = 8'h78; 8'hc2: out = 8'h25; 8'hc3: out = 8'h2e;
+            8'hc4: out = 8'h1c; 8'hc5: out = 8'ha6; 8'hc6: out = 8'hb4; 8'hc7: out = 8'hc6;
+            8'hc8: out = 8'he8; 8'hc9: out = 8'hdd; 8'hca: out = 8'h74; 8'hcb: out = 8'h1f;
+            8'hcc: out = 8'h4b; 8'hcd: out = 8'hbd; 8'hce: out = 8'h8b; 8'hcf: out = 8'h8a;
+
+            // Row 0xD_
+            8'hd0: out = 8'h70; 8'hd1: out = 8'h3e; 8'hd2: out = 8'hb5; 8'hd3: out = 8'h66;
+            8'hd4: out = 8'h48; 8'hd5: out = 8'h03; 8'hd6: out = 8'hf6; 8'hd7: out = 8'h0e;
+            8'hd8: out = 8'h61; 8'hd9: out = 8'h35; 8'hda: out = 8'h57; 8'hdb: out = 8'hb9;
+            8'hdc: out = 8'h86; 8'hdd: out = 8'hc1; 8'hde: out = 8'h1d; 8'hdf: out = 8'h9e;
+
+            // Row 0xE_
+            8'he0: out = 8'he1; 8'he1: out = 8'hf8; 8'he2: out = 8'h98; 8'he3: out = 8'h11;
+            8'he4: out = 8'h69; 8'he5: out = 8'hd9; 8'he6: out = 8'h8e; 8'he7: out = 8'h94;
+            8'he8: out = 8'h9b; 8'he9: out = 8'h1e; 8'hea: out = 8'h87; 8'heb: out = 8'he9;
+            8'hec: out = 8'hce; 8'hed: out = 8'h55; 8'hee: out = 8'h28; 8'hef: out = 8'hdf;
+
+            // Row 0xF_
+            8'hf0: out = 8'h8c; 8'hf1: out = 8'ha1; 8'hf2: out = 8'h89; 8'hf3: out = 8'h0d;
+            8'hf4: out = 8'hbf; 8'hf5: out = 8'he6; 8'hf6: out = 8'h42; 8'hf7: out = 8'h68;
+            8'hf8: out = 8'h41; 8'hf9: out = 8'h99; 8'hfa: out = 8'h2d; 8'hfb: out = 8'h0f;
+            8'hfc: out = 8'hb0; 8'hfd: out = 8'h54; 8'hfe: out = 8'hbb; 8'hff: out = 8'h16;
+
+            default: out = 8'hxx;
+        endcase
+    end
+
 endmodule
