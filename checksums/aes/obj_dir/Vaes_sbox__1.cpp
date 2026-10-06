@@ -1,0 +1,2242 @@
+// Verilated -*- C++ -*-
+// DESCRIPTION: Verilator output: Design implementation internals
+// See Vaes.h for the primary calling header
+
+#include "Vaes__pch.h"
+
+void Vaes_sbox___nba_sequent__TOP__aes__DOT__sb__DOT__gen_sbox__BRA__11__KET____DOT__sb__0(Vaes_sbox* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+          Vaes_sbox___nba_sequent__TOP__aes__DOT__sb__DOT__gen_sbox__BRA__11__KET____DOT__sb__0\n"); );
+    Vaes__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    auto& vlSelfRef = std::ref(*vlSelf).get();
+    // Locals
+    CData/*0:0*/ __PVT__t__BRA__61__KET__;
+    __PVT__t__BRA__61__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__58__KET__;
+    __PVT__t__BRA__58__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__57__KET__;
+    __PVT__t__BRA__57__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__54__KET__;
+    __PVT__t__BRA__54__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__53__KET__;
+    __PVT__t__BRA__53__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__52__KET__;
+    __PVT__t__BRA__52__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__50__KET__;
+    __PVT__t__BRA__50__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__49__KET__;
+    __PVT__t__BRA__49__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__46__KET__;
+    __PVT__t__BRA__46__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__45__KET__;
+    __PVT__t__BRA__45__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__43__KET__;
+    __PVT__t__BRA__43__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__39__KET__;
+    __PVT__t__BRA__39__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__38__KET__;
+    __PVT__t__BRA__38__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__36__KET__;
+    __PVT__t__BRA__36__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__35__KET__;
+    __PVT__t__BRA__35__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__34__KET__;
+    __PVT__t__BRA__34__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__32__KET__;
+    __PVT__t__BRA__32__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__31__KET__;
+    __PVT__t__BRA__31__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__30__KET__;
+    __PVT__t__BRA__30__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__28__KET__;
+    __PVT__t__BRA__28__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__27__KET__;
+    __PVT__t__BRA__27__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__26__KET__;
+    __PVT__t__BRA__26__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__25__KET__;
+    __PVT__t__BRA__25__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__24__KET__;
+    __PVT__t__BRA__24__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__23__KET__;
+    __PVT__t__BRA__23__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__22__KET__;
+    __PVT__t__BRA__22__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__21__KET__;
+    __PVT__t__BRA__21__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__20__KET__;
+    __PVT__t__BRA__20__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__19__KET__;
+    __PVT__t__BRA__19__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__18__KET__;
+    __PVT__t__BRA__18__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__17__KET__;
+    __PVT__t__BRA__17__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__16__KET__;
+    __PVT__t__BRA__16__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__15__KET__;
+    __PVT__t__BRA__15__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__14__KET__;
+    __PVT__t__BRA__14__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__13__KET__;
+    __PVT__t__BRA__13__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__12__KET__;
+    __PVT__t__BRA__12__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__11__KET__;
+    __PVT__t__BRA__11__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__10__KET__;
+    __PVT__t__BRA__10__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__9__KET__;
+    __PVT__t__BRA__9__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__8__KET__;
+    __PVT__t__BRA__8__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__7__KET__;
+    __PVT__t__BRA__7__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__6__KET__;
+    __PVT__t__BRA__6__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__5__KET__;
+    __PVT__t__BRA__5__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__4__KET__;
+    __PVT__t__BRA__4__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__3__KET__;
+    __PVT__t__BRA__3__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__2__KET__;
+    __PVT__t__BRA__2__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__1__KET__;
+    __PVT__t__BRA__1__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__0__KET__;
+    __PVT__t__BRA__0__KET__ = 0;
+    // Body
+    vlSelfRef.__PVT__y__BRA__8__KET__ = (1U & VL_REDXOR_32(
+                                                           (0x21000000U 
+                                                            & vlSymsp->TOP.aes__DOT__state_current[2U])));
+    __PVT__t__BRA__0__KET__ = (1U & VL_REDXOR_32((0x06000000U 
+                                                  & vlSymsp->TOP.aes__DOT__state_current[2U])));
+    vlSelfRef.__PVT__y__BRA__9__KET__ = (1U & VL_REDXOR_32(
+                                                           (0x09000000U 
+                                                            & vlSymsp->TOP.aes__DOT__state_current[2U])));
+    vlSelfRef.__PVT__y__BRA__14__KET__ = (1U & VL_REDXOR_32(
+                                                            (0x28000000U 
+                                                             & vlSymsp->TOP.aes__DOT__state_current[2U])));
+    vlSelfRef.__PVT__y__BRA__13__KET__ = (1U & VL_REDXOR_32(
+                                                            (0x41000000U 
+                                                             & vlSymsp->TOP.aes__DOT__state_current[2U])));
+    vlSelfRef.__PVT__y__BRA__1__KET__ = ((IData)(__PVT__t__BRA__0__KET__) 
+                                         ^ (vlSymsp->TOP.aes__DOT__state_current[2U] 
+                                            >> 0x0000001fU));
+    vlSelfRef.__PVT__y__BRA__12__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__13__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__14__KET__));
+    vlSelfRef.__PVT__y__BRA__4__KET__ = (1U & ((IData)(vlSelfRef.__PVT__y__BRA__1__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[2U] 
+                                                  >> 0x0000001bU)));
+    vlSelfRef.__PVT__y__BRA__2__KET__ = (1U & ((IData)(vlSelfRef.__PVT__y__BRA__1__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[2U] 
+                                                  >> 0x00000018U)));
+    vlSelfRef.__PVT__y__BRA__5__KET__ = (1U & ((IData)(vlSelfRef.__PVT__y__BRA__1__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[2U] 
+                                                  >> 0x0000001eU)));
+    __PVT__t__BRA__1__KET__ = (1U & ((vlSymsp->TOP.aes__DOT__state_current[2U] 
+                                      >> 0x0000001cU) 
+                                     ^ (IData)(vlSelfRef.__PVT__y__BRA__12__KET__)));
+    __PVT__t__BRA__5__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__4__KET__) 
+                               & (vlSymsp->TOP.aes__DOT__state_current[2U] 
+                                  >> 0x0000001fU));
+    vlSelfRef.__PVT__y__BRA__3__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__5__KET__) 
+                                         ^ (IData)(vlSelfRef.__PVT__y__BRA__8__KET__));
+    __PVT__t__BRA__8__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__5__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__1__KET__));
+    vlSelfRef.__PVT__y__BRA__15__KET__ = (1U & ((IData)(__PVT__t__BRA__1__KET__) 
+                                                ^ (
+                                                   vlSymsp->TOP.aes__DOT__state_current[2U] 
+                                                   >> 0x0000001dU)));
+    vlSelfRef.__PVT__y__BRA__20__KET__ = (1U & ((IData)(__PVT__t__BRA__1__KET__) 
+                                                ^ (
+                                                   vlSymsp->TOP.aes__DOT__state_current[2U] 
+                                                   >> 0x00000019U)));
+    vlSelfRef.__PVT__y__BRA__6__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__15__KET__) 
+                                         ^ (vlSymsp->TOP.aes__DOT__state_current[2U] 
+                                            >> 0x0000001fU));
+    __PVT__t__BRA__2__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__12__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__15__KET__));
+    vlSelfRef.__PVT__y__BRA__10__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__15__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__0__KET__));
+    vlSelfRef.__PVT__y__BRA__11__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__20__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__9__KET__));
+    __PVT__t__BRA__3__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__3__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__6__KET__));
+    __PVT__t__BRA__6__KET__ = ((IData)(__PVT__t__BRA__5__KET__) 
+                               ^ (IData)(__PVT__t__BRA__2__KET__));
+    __PVT__t__BRA__15__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__8__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__10__KET__));
+    vlSelfRef.__PVT__y__BRA__7__KET__ = ((vlSymsp->TOP.aes__DOT__state_current[2U] 
+                                          >> 0x0000001fU) 
+                                         ^ (IData)(vlSelfRef.__PVT__y__BRA__11__KET__));
+    vlSelfRef.__PVT__y__BRA__17__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__10__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__11__KET__));
+    __PVT__t__BRA__12__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__9__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__11__KET__));
+    vlSelfRef.__PVT__y__BRA__16__KET__ = ((IData)(__PVT__t__BRA__0__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__11__KET__));
+    __PVT__t__BRA__4__KET__ = ((IData)(__PVT__t__BRA__3__KET__) 
+                               ^ (IData)(__PVT__t__BRA__2__KET__));
+    __PVT__t__BRA__10__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__2__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__7__KET__));
+    __PVT__t__BRA__13__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__14__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__17__KET__));
+    __PVT__t__BRA__16__KET__ = ((IData)(__PVT__t__BRA__15__KET__) 
+                                ^ (IData)(__PVT__t__BRA__12__KET__));
+    __PVT__t__BRA__7__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__13__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__16__KET__));
+    __PVT__t__BRA__14__KET__ = ((IData)(__PVT__t__BRA__13__KET__) 
+                                ^ (IData)(__PVT__t__BRA__12__KET__));
+    __PVT__t__BRA__18__KET__ = ((IData)(__PVT__t__BRA__6__KET__) 
+                                ^ (IData)(__PVT__t__BRA__16__KET__));
+    __PVT__t__BRA__9__KET__ = ((IData)(__PVT__t__BRA__8__KET__) 
+                               ^ (IData)(__PVT__t__BRA__7__KET__));
+    __PVT__t__BRA__11__KET__ = ((IData)(__PVT__t__BRA__10__KET__) 
+                                ^ (IData)(__PVT__t__BRA__7__KET__));
+    __PVT__t__BRA__17__KET__ = ((IData)(__PVT__t__BRA__4__KET__) 
+                                ^ (IData)(__PVT__t__BRA__14__KET__));
+    __PVT__t__BRA__22__KET__ = ((IData)(__PVT__t__BRA__18__KET__) 
+                                ^ ((IData)(vlSelfRef.__PVT__y__BRA__10__KET__) 
+                                   ^ (IData)(vlSelfRef.__PVT__y__BRA__8__KET__)));
+    __PVT__t__BRA__19__KET__ = ((IData)(__PVT__t__BRA__9__KET__) 
+                                ^ (IData)(__PVT__t__BRA__14__KET__));
+    __PVT__t__BRA__20__KET__ = ((IData)(__PVT__t__BRA__11__KET__) 
+                                ^ (IData)(__PVT__t__BRA__16__KET__));
+    __PVT__t__BRA__21__KET__ = ((IData)(__PVT__t__BRA__17__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__y__BRA__20__KET__));
+    __PVT__t__BRA__23__KET__ = ((IData)(__PVT__t__BRA__19__KET__) 
+                                ^ ((IData)(vlSelfRef.__PVT__y__BRA__13__KET__) 
+                                   ^ (IData)(vlSelfRef.__PVT__y__BRA__16__KET__)));
+    __PVT__t__BRA__24__KET__ = (1U & ((IData)(__PVT__t__BRA__20__KET__) 
+                                      ^ ((vlSymsp->TOP.aes__DOT__state_current[2U] 
+                                          >> 0x00000018U) 
+                                         ^ (IData)(vlSelfRef.__PVT__y__BRA__16__KET__))));
+    __PVT__t__BRA__25__KET__ = ((IData)(__PVT__t__BRA__21__KET__) 
+                                ^ (IData)(__PVT__t__BRA__22__KET__));
+    __PVT__t__BRA__26__KET__ = ((IData)(__PVT__t__BRA__21__KET__) 
+                                & (IData)(__PVT__t__BRA__23__KET__));
+    __PVT__t__BRA__30__KET__ = ((IData)(__PVT__t__BRA__23__KET__) 
+                                ^ (IData)(__PVT__t__BRA__24__KET__));
+    __PVT__t__BRA__31__KET__ = ((IData)(__PVT__t__BRA__22__KET__) 
+                                ^ (IData)(__PVT__t__BRA__26__KET__));
+    __PVT__t__BRA__27__KET__ = ((IData)(__PVT__t__BRA__24__KET__) 
+                                ^ (IData)(__PVT__t__BRA__26__KET__));
+    __PVT__t__BRA__32__KET__ = ((IData)(__PVT__t__BRA__31__KET__) 
+                                & (IData)(__PVT__t__BRA__30__KET__));
+    __PVT__t__BRA__28__KET__ = ((IData)(__PVT__t__BRA__25__KET__) 
+                                & (IData)(__PVT__t__BRA__27__KET__));
+    vlSelfRef.__PVT__t__BRA__33__KET__ = ((IData)(__PVT__t__BRA__32__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__24__KET__));
+    vlSelfRef.__PVT__t__BRA__29__KET__ = ((IData)(__PVT__t__BRA__28__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__22__KET__));
+    vlSelfRef.__PVT__z__BRA__2__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                         & (vlSymsp->TOP.aes__DOT__state_current[2U] 
+                                            >> 0x0000001fU));
+    __PVT__t__BRA__34__KET__ = ((IData)(__PVT__t__BRA__23__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__33__KET__));
+    __PVT__t__BRA__35__KET__ = ((IData)(__PVT__t__BRA__27__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__33__KET__));
+    vlSelfRef.__PVT__z__BRA__5__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__7__KET__));
+    vlSelfRef.__PVT__t__BRA__42__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__33__KET__));
+    __PVT__t__BRA__36__KET__ = ((IData)(__PVT__t__BRA__24__KET__) 
+                                & (IData)(__PVT__t__BRA__35__KET__));
+    vlSelfRef.__PVT__t__BRA__51__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__2__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__z__BRA__5__KET__));
+    vlSelfRef.__PVT__t__BRA__37__KET__ = ((IData)(__PVT__t__BRA__36__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__34__KET__));
+    __PVT__t__BRA__38__KET__ = ((IData)(__PVT__t__BRA__27__KET__) 
+                                ^ (IData)(__PVT__t__BRA__36__KET__));
+    vlSelfRef.__PVT__z__BRA__10__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__37__KET__) 
+                                          & (IData)(vlSelfRef.__PVT__y__BRA__3__KET__));
+    vlSelfRef.__PVT__t__BRA__44__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__37__KET__));
+    __PVT__t__BRA__39__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                & (IData)(__PVT__t__BRA__38__KET__));
+    vlSelfRef.__PVT__t__BRA__47__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__10__KET__) 
+                                          ^ ((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                             & (IData)(vlSelfRef.__PVT__y__BRA__4__KET__)));
+    __PVT__t__BRA__49__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__44__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__12__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__10__KET__));
+    vlSelfRef.__PVT__t__BRA__40__KET__ = ((IData)(__PVT__t__BRA__25__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__39__KET__));
+    vlSelfRef.__PVT__t__BRA__48__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__5__KET__) 
+                                          ^ ((IData)(vlSelfRef.__PVT__t__BRA__40__KET__) 
+                                             & (IData)(vlSelfRef.__PVT__y__BRA__5__KET__)));
+    vlSelfRef.__PVT__z__BRA__4__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__40__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__1__KET__));
+    __PVT__t__BRA__43__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__40__KET__));
+    vlSelfRef.__PVT__t__BRA__41__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__40__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__37__KET__));
+    vlSelfRef.__PVT__z__BRA__12__KET__ = ((IData)(__PVT__t__BRA__43__KET__) 
+                                          & (IData)(vlSelfRef.__PVT__y__BRA__13__KET__));
+    vlSelfRef.__PVT__z__BRA__3__KET__ = ((IData)(__PVT__t__BRA__43__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__16__KET__));
+    __PVT__t__BRA__45__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__41__KET__));
+    vlSelfRef.__PVT__t__BRA__56__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__12__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__48__KET__));
+    __PVT__t__BRA__50__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__2__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__12__KET__));
+    __PVT__t__BRA__53__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__44__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__15__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__3__KET__));
+    vlSelfRef.__PVT__z__BRA__7__KET__ = ((IData)(__PVT__t__BRA__45__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__17__KET__));
+    vlSelfRef.__PVT__z__BRA__16__KET__ = ((IData)(__PVT__t__BRA__45__KET__) 
+                                          & (IData)(vlSelfRef.__PVT__y__BRA__14__KET__));
+    __PVT__t__BRA__57__KET__ = ((IData)(__PVT__t__BRA__50__KET__) 
+                                ^ (IData)(__PVT__t__BRA__53__KET__));
+    __PVT__t__BRA__54__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__11__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__7__KET__));
+    __PVT__t__BRA__52__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__7__KET__) 
+                                ^ ((IData)(vlSelfRef.__PVT__t__BRA__41__KET__) 
+                                   & (IData)(vlSelfRef.__PVT__y__BRA__10__KET__)));
+    vlSelfRef.__PVT__t__BRA__55__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__16__KET__) 
+                                          ^ ((IData)(vlSelfRef.__PVT__t__BRA__41__KET__) 
+                                             & (IData)(vlSelfRef.__PVT__y__BRA__8__KET__)));
+    __PVT__t__BRA__46__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__9__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__16__KET__));
+    __PVT__t__BRA__61__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__2__KET__)) 
+                                ^ (IData)(__PVT__t__BRA__57__KET__));
+    vlSelfRef.__PVT__t__BRA__59__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__3__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__54__KET__));
+    vlSelfRef.__PVT__t__BRA__60__KET__ = ((IData)(__PVT__t__BRA__46__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__57__KET__));
+    __PVT__t__BRA__58__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__4__KET__) 
+                                ^ (IData)(__PVT__t__BRA__46__KET__));
+    vlSelfRef.__PVT__t__BRA__64__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__4__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__59__KET__));
+    vlSelfRef.__PVT__t__BRA__63__KET__ = ((IData)(__PVT__t__BRA__49__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__58__KET__));
+    vlSelfRef.__PVT__t__BRA__62__KET__ = ((IData)(__PVT__t__BRA__52__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__58__KET__));
+    vlSelfRef.__PVT__t__BRA__66__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__37__KET__) 
+                                           & (IData)(vlSelfRef.__PVT__y__BRA__6__KET__)) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__63__KET__));
+    vlSelfRef.__PVT__t__BRA__65__KET__ = ((IData)(__PVT__t__BRA__61__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__62__KET__));
+    vlSelfRef.__VdfgRegularize_h224e5c7b_0_0 = ((IData)(__PVT__t__BRA__53__KET__) 
+                                                ^ (IData)(vlSelfRef.__PVT__t__BRA__66__KET__));
+    vlSelfRef.__PVT__t__BRA__67__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__64__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__65__KET__));
+    vlSelfRef.__PVT__t[0U] = (((((((((IData)(__PVT__t__BRA__31__KET__) 
+                                     << 3U) | ((IData)(__PVT__t__BRA__30__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                       << 1U) | (IData)(__PVT__t__BRA__28__KET__))) 
+                                  << 0x0000000cU) | 
+                                 (((((IData)(__PVT__t__BRA__27__KET__) 
+                                     << 3U) | ((IData)(__PVT__t__BRA__26__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(__PVT__t__BRA__25__KET__) 
+                                       << 1U) | (IData)(__PVT__t__BRA__24__KET__))) 
+                                  << 8U)) | ((((((IData)(__PVT__t__BRA__23__KET__) 
+                                                 << 3U) 
+                                                | ((IData)(__PVT__t__BRA__22__KET__) 
+                                                   << 2U)) 
+                                               | (((IData)(__PVT__t__BRA__21__KET__) 
+                                                   << 1U) 
+                                                  | (IData)(__PVT__t__BRA__20__KET__))) 
+                                              << 4U) 
+                                             | ((((IData)(__PVT__t__BRA__19__KET__) 
+                                                  << 3U) 
+                                                 | ((IData)(__PVT__t__BRA__18__KET__) 
+                                                    << 2U)) 
+                                                | (((IData)(__PVT__t__BRA__17__KET__) 
+                                                    << 1U) 
+                                                   | (IData)(__PVT__t__BRA__16__KET__))))) 
+                               << 0x00000010U) | ((
+                                                   (((((IData)(__PVT__t__BRA__15__KET__) 
+                                                       << 3U) 
+                                                      | ((IData)(__PVT__t__BRA__14__KET__) 
+                                                         << 2U)) 
+                                                     | (((IData)(__PVT__t__BRA__13__KET__) 
+                                                         << 1U) 
+                                                        | (IData)(__PVT__t__BRA__12__KET__))) 
+                                                    << 0x0000000cU) 
+                                                   | (((((IData)(__PVT__t__BRA__11__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(__PVT__t__BRA__10__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(__PVT__t__BRA__9__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(__PVT__t__BRA__8__KET__))) 
+                                                      << 8U)) 
+                                                  | ((((((IData)(__PVT__t__BRA__7__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(__PVT__t__BRA__6__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(__PVT__t__BRA__5__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(__PVT__t__BRA__4__KET__))) 
+                                                      << 4U) 
+                                                     | ((((IData)(__PVT__t__BRA__3__KET__) 
+                                                          << 3U) 
+                                                         | ((IData)(__PVT__t__BRA__2__KET__) 
+                                                            << 2U)) 
+                                                        | (((IData)(__PVT__t__BRA__1__KET__) 
+                                                            << 1U) 
+                                                           | (IData)(__PVT__t__BRA__0__KET__))))));
+    vlSelfRef.__PVT__t[1U] = (((((((((IData)(vlSelfRef.__PVT__t__BRA__63__KET__) 
+                                     << 3U) | ((IData)(vlSelfRef.__PVT__t__BRA__62__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(__PVT__t__BRA__61__KET__) 
+                                       << 1U) | (IData)(vlSelfRef.__PVT__t__BRA__60__KET__))) 
+                                  << 0x0000000cU) | 
+                                 (((((IData)(vlSelfRef.__PVT__t__BRA__59__KET__) 
+                                     << 3U) | ((IData)(__PVT__t__BRA__58__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(__PVT__t__BRA__57__KET__) 
+                                       << 1U) | (IData)(vlSelfRef.__PVT__t__BRA__56__KET__))) 
+                                  << 8U)) | ((((((IData)(vlSelfRef.__PVT__t__BRA__55__KET__) 
+                                                 << 3U) 
+                                                | ((IData)(__PVT__t__BRA__54__KET__) 
+                                                   << 2U)) 
+                                               | (((IData)(__PVT__t__BRA__53__KET__) 
+                                                   << 1U) 
+                                                  | (IData)(__PVT__t__BRA__52__KET__))) 
+                                              << 4U) 
+                                             | ((((IData)(vlSelfRef.__PVT__t__BRA__51__KET__) 
+                                                  << 3U) 
+                                                 | ((IData)(__PVT__t__BRA__50__KET__) 
+                                                    << 2U)) 
+                                                | (((IData)(__PVT__t__BRA__49__KET__) 
+                                                    << 1U) 
+                                                   | (IData)(vlSelfRef.__PVT__t__BRA__48__KET__))))) 
+                               << 0x00000010U) | ((
+                                                   (((((IData)(vlSelfRef.__PVT__t__BRA__47__KET__) 
+                                                       << 3U) 
+                                                      | ((IData)(__PVT__t__BRA__46__KET__) 
+                                                         << 2U)) 
+                                                     | (((IData)(__PVT__t__BRA__45__KET__) 
+                                                         << 1U) 
+                                                        | (IData)(vlSelfRef.__PVT__t__BRA__44__KET__))) 
+                                                    << 0x0000000cU) 
+                                                   | (((((IData)(__PVT__t__BRA__43__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(vlSelfRef.__PVT__t__BRA__41__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(vlSelfRef.__PVT__t__BRA__40__KET__))) 
+                                                      << 8U)) 
+                                                  | ((((((IData)(__PVT__t__BRA__39__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(__PVT__t__BRA__38__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(vlSelfRef.__PVT__t__BRA__37__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(__PVT__t__BRA__36__KET__))) 
+                                                      << 4U) 
+                                                     | ((((IData)(__PVT__t__BRA__35__KET__) 
+                                                          << 3U) 
+                                                         | ((IData)(__PVT__t__BRA__34__KET__) 
+                                                            << 2U)) 
+                                                        | (((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                                            << 1U) 
+                                                           | (IData)(__PVT__t__BRA__32__KET__))))));
+    vlSelfRef.__PVT__t[2U] = (0x0000000fU & ((((IData)(vlSelfRef.__PVT__t__BRA__67__KET__) 
+                                               << 3U) 
+                                              | ((IData)(vlSelfRef.__PVT__t__BRA__66__KET__) 
+                                                 << 2U)) 
+                                             | (((IData)(vlSelfRef.__PVT__t__BRA__65__KET__) 
+                                                 << 1U) 
+                                                | (IData)(vlSelfRef.__PVT__t__BRA__64__KET__))));
+}
+
+void Vaes_sbox___nba_sequent__TOP__aes__DOT__sb__DOT__gen_sbox__BRA__12__KET____DOT__sb__0(Vaes_sbox* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+          Vaes_sbox___nba_sequent__TOP__aes__DOT__sb__DOT__gen_sbox__BRA__12__KET____DOT__sb__0\n"); );
+    Vaes__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    auto& vlSelfRef = std::ref(*vlSelf).get();
+    // Locals
+    CData/*0:0*/ __PVT__t__BRA__61__KET__;
+    __PVT__t__BRA__61__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__58__KET__;
+    __PVT__t__BRA__58__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__57__KET__;
+    __PVT__t__BRA__57__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__54__KET__;
+    __PVT__t__BRA__54__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__53__KET__;
+    __PVT__t__BRA__53__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__52__KET__;
+    __PVT__t__BRA__52__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__50__KET__;
+    __PVT__t__BRA__50__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__49__KET__;
+    __PVT__t__BRA__49__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__46__KET__;
+    __PVT__t__BRA__46__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__45__KET__;
+    __PVT__t__BRA__45__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__43__KET__;
+    __PVT__t__BRA__43__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__39__KET__;
+    __PVT__t__BRA__39__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__38__KET__;
+    __PVT__t__BRA__38__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__36__KET__;
+    __PVT__t__BRA__36__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__35__KET__;
+    __PVT__t__BRA__35__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__34__KET__;
+    __PVT__t__BRA__34__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__32__KET__;
+    __PVT__t__BRA__32__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__31__KET__;
+    __PVT__t__BRA__31__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__30__KET__;
+    __PVT__t__BRA__30__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__28__KET__;
+    __PVT__t__BRA__28__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__27__KET__;
+    __PVT__t__BRA__27__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__26__KET__;
+    __PVT__t__BRA__26__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__25__KET__;
+    __PVT__t__BRA__25__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__24__KET__;
+    __PVT__t__BRA__24__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__23__KET__;
+    __PVT__t__BRA__23__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__22__KET__;
+    __PVT__t__BRA__22__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__21__KET__;
+    __PVT__t__BRA__21__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__20__KET__;
+    __PVT__t__BRA__20__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__19__KET__;
+    __PVT__t__BRA__19__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__18__KET__;
+    __PVT__t__BRA__18__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__17__KET__;
+    __PVT__t__BRA__17__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__16__KET__;
+    __PVT__t__BRA__16__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__15__KET__;
+    __PVT__t__BRA__15__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__14__KET__;
+    __PVT__t__BRA__14__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__13__KET__;
+    __PVT__t__BRA__13__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__12__KET__;
+    __PVT__t__BRA__12__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__11__KET__;
+    __PVT__t__BRA__11__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__10__KET__;
+    __PVT__t__BRA__10__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__9__KET__;
+    __PVT__t__BRA__9__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__8__KET__;
+    __PVT__t__BRA__8__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__7__KET__;
+    __PVT__t__BRA__7__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__6__KET__;
+    __PVT__t__BRA__6__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__5__KET__;
+    __PVT__t__BRA__5__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__4__KET__;
+    __PVT__t__BRA__4__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__3__KET__;
+    __PVT__t__BRA__3__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__2__KET__;
+    __PVT__t__BRA__2__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__1__KET__;
+    __PVT__t__BRA__1__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__0__KET__;
+    __PVT__t__BRA__0__KET__ = 0;
+    // Body
+    vlSelfRef.__PVT__y__BRA__8__KET__ = (1U & (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                  >> 5U)));
+    __PVT__t__BRA__0__KET__ = (1U & VL_REDXOR_4((6U 
+                                                 & vlSymsp->TOP.aes__DOT__state_current[3U])));
+    vlSelfRef.__PVT__y__BRA__9__KET__ = (1U & (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                  >> 3U)));
+    vlSelfRef.__PVT__y__BRA__14__KET__ = (1U & VL_REDXOR_8(
+                                                           (0x00000028U 
+                                                            & vlSymsp->TOP.aes__DOT__state_current[3U])));
+    vlSelfRef.__PVT__y__BRA__13__KET__ = (1U & (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                ^ (
+                                                   vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                   >> 6U)));
+    vlSelfRef.__PVT__y__BRA__1__KET__ = (1U & ((IData)(__PVT__t__BRA__0__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                  >> 7U)));
+    vlSelfRef.__PVT__y__BRA__12__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__13__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__14__KET__));
+    vlSelfRef.__PVT__y__BRA__4__KET__ = (1U & ((IData)(vlSelfRef.__PVT__y__BRA__1__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                  >> 3U)));
+    vlSelfRef.__PVT__y__BRA__2__KET__ = (1U & ((IData)(vlSelfRef.__PVT__y__BRA__1__KET__) 
+                                               ^ vlSymsp->TOP.aes__DOT__state_current[3U]));
+    vlSelfRef.__PVT__y__BRA__5__KET__ = (1U & ((IData)(vlSelfRef.__PVT__y__BRA__1__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                  >> 6U)));
+    __PVT__t__BRA__1__KET__ = (1U & ((vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                      >> 4U) ^ (IData)(vlSelfRef.__PVT__y__BRA__12__KET__)));
+    __PVT__t__BRA__5__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__4__KET__) 
+                               & (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                  >> 7U));
+    vlSelfRef.__PVT__y__BRA__3__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__5__KET__) 
+                                         ^ (IData)(vlSelfRef.__PVT__y__BRA__8__KET__));
+    __PVT__t__BRA__8__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__5__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__1__KET__));
+    vlSelfRef.__PVT__y__BRA__15__KET__ = (1U & ((IData)(__PVT__t__BRA__1__KET__) 
+                                                ^ (
+                                                   vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                   >> 5U)));
+    vlSelfRef.__PVT__y__BRA__20__KET__ = (1U & ((IData)(__PVT__t__BRA__1__KET__) 
+                                                ^ (
+                                                   vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                   >> 1U)));
+    vlSelfRef.__PVT__y__BRA__6__KET__ = (1U & ((IData)(vlSelfRef.__PVT__y__BRA__15__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                  >> 7U)));
+    __PVT__t__BRA__2__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__12__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__15__KET__));
+    vlSelfRef.__PVT__y__BRA__10__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__15__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__0__KET__));
+    vlSelfRef.__PVT__y__BRA__11__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__20__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__9__KET__));
+    __PVT__t__BRA__3__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__3__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__6__KET__));
+    __PVT__t__BRA__6__KET__ = ((IData)(__PVT__t__BRA__5__KET__) 
+                               ^ (IData)(__PVT__t__BRA__2__KET__));
+    __PVT__t__BRA__15__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__8__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__10__KET__));
+    vlSelfRef.__PVT__y__BRA__7__KET__ = (1U & ((vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                >> 7U) 
+                                               ^ (IData)(vlSelfRef.__PVT__y__BRA__11__KET__)));
+    vlSelfRef.__PVT__y__BRA__17__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__10__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__11__KET__));
+    __PVT__t__BRA__12__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__9__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__11__KET__));
+    vlSelfRef.__PVT__y__BRA__16__KET__ = ((IData)(__PVT__t__BRA__0__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__11__KET__));
+    __PVT__t__BRA__4__KET__ = ((IData)(__PVT__t__BRA__3__KET__) 
+                               ^ (IData)(__PVT__t__BRA__2__KET__));
+    __PVT__t__BRA__10__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__2__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__7__KET__));
+    __PVT__t__BRA__13__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__14__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__17__KET__));
+    __PVT__t__BRA__16__KET__ = ((IData)(__PVT__t__BRA__15__KET__) 
+                                ^ (IData)(__PVT__t__BRA__12__KET__));
+    __PVT__t__BRA__7__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__13__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__16__KET__));
+    __PVT__t__BRA__14__KET__ = ((IData)(__PVT__t__BRA__13__KET__) 
+                                ^ (IData)(__PVT__t__BRA__12__KET__));
+    __PVT__t__BRA__18__KET__ = ((IData)(__PVT__t__BRA__6__KET__) 
+                                ^ (IData)(__PVT__t__BRA__16__KET__));
+    __PVT__t__BRA__9__KET__ = ((IData)(__PVT__t__BRA__8__KET__) 
+                               ^ (IData)(__PVT__t__BRA__7__KET__));
+    __PVT__t__BRA__11__KET__ = ((IData)(__PVT__t__BRA__10__KET__) 
+                                ^ (IData)(__PVT__t__BRA__7__KET__));
+    __PVT__t__BRA__17__KET__ = ((IData)(__PVT__t__BRA__4__KET__) 
+                                ^ (IData)(__PVT__t__BRA__14__KET__));
+    __PVT__t__BRA__22__KET__ = ((IData)(__PVT__t__BRA__18__KET__) 
+                                ^ ((IData)(vlSelfRef.__PVT__y__BRA__10__KET__) 
+                                   ^ (IData)(vlSelfRef.__PVT__y__BRA__8__KET__)));
+    __PVT__t__BRA__19__KET__ = ((IData)(__PVT__t__BRA__9__KET__) 
+                                ^ (IData)(__PVT__t__BRA__14__KET__));
+    __PVT__t__BRA__20__KET__ = ((IData)(__PVT__t__BRA__11__KET__) 
+                                ^ (IData)(__PVT__t__BRA__16__KET__));
+    __PVT__t__BRA__21__KET__ = ((IData)(__PVT__t__BRA__17__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__y__BRA__20__KET__));
+    __PVT__t__BRA__23__KET__ = ((IData)(__PVT__t__BRA__19__KET__) 
+                                ^ ((IData)(vlSelfRef.__PVT__y__BRA__13__KET__) 
+                                   ^ (IData)(vlSelfRef.__PVT__y__BRA__16__KET__)));
+    __PVT__t__BRA__24__KET__ = (1U & ((IData)(__PVT__t__BRA__20__KET__) 
+                                      ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                         ^ (IData)(vlSelfRef.__PVT__y__BRA__16__KET__))));
+    __PVT__t__BRA__25__KET__ = ((IData)(__PVT__t__BRA__21__KET__) 
+                                ^ (IData)(__PVT__t__BRA__22__KET__));
+    __PVT__t__BRA__26__KET__ = ((IData)(__PVT__t__BRA__21__KET__) 
+                                & (IData)(__PVT__t__BRA__23__KET__));
+    __PVT__t__BRA__30__KET__ = ((IData)(__PVT__t__BRA__23__KET__) 
+                                ^ (IData)(__PVT__t__BRA__24__KET__));
+    __PVT__t__BRA__31__KET__ = ((IData)(__PVT__t__BRA__22__KET__) 
+                                ^ (IData)(__PVT__t__BRA__26__KET__));
+    __PVT__t__BRA__27__KET__ = ((IData)(__PVT__t__BRA__24__KET__) 
+                                ^ (IData)(__PVT__t__BRA__26__KET__));
+    __PVT__t__BRA__32__KET__ = ((IData)(__PVT__t__BRA__31__KET__) 
+                                & (IData)(__PVT__t__BRA__30__KET__));
+    __PVT__t__BRA__28__KET__ = ((IData)(__PVT__t__BRA__25__KET__) 
+                                & (IData)(__PVT__t__BRA__27__KET__));
+    vlSelfRef.__PVT__t__BRA__33__KET__ = ((IData)(__PVT__t__BRA__32__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__24__KET__));
+    vlSelfRef.__PVT__t__BRA__29__KET__ = ((IData)(__PVT__t__BRA__28__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__22__KET__));
+    vlSelfRef.__PVT__z__BRA__2__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                         & (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                            >> 7U));
+    __PVT__t__BRA__34__KET__ = ((IData)(__PVT__t__BRA__23__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__33__KET__));
+    __PVT__t__BRA__35__KET__ = ((IData)(__PVT__t__BRA__27__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__33__KET__));
+    vlSelfRef.__PVT__z__BRA__5__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__7__KET__));
+    vlSelfRef.__PVT__t__BRA__42__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__33__KET__));
+    __PVT__t__BRA__36__KET__ = ((IData)(__PVT__t__BRA__24__KET__) 
+                                & (IData)(__PVT__t__BRA__35__KET__));
+    vlSelfRef.__PVT__t__BRA__51__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__2__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__z__BRA__5__KET__));
+    vlSelfRef.__PVT__t__BRA__37__KET__ = ((IData)(__PVT__t__BRA__36__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__34__KET__));
+    __PVT__t__BRA__38__KET__ = ((IData)(__PVT__t__BRA__27__KET__) 
+                                ^ (IData)(__PVT__t__BRA__36__KET__));
+    vlSelfRef.__PVT__z__BRA__10__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__37__KET__) 
+                                          & (IData)(vlSelfRef.__PVT__y__BRA__3__KET__));
+    vlSelfRef.__PVT__t__BRA__44__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__37__KET__));
+    __PVT__t__BRA__39__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                & (IData)(__PVT__t__BRA__38__KET__));
+    vlSelfRef.__PVT__t__BRA__47__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__10__KET__) 
+                                          ^ ((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                             & (IData)(vlSelfRef.__PVT__y__BRA__4__KET__)));
+    __PVT__t__BRA__49__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__44__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__12__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__10__KET__));
+    vlSelfRef.__PVT__t__BRA__40__KET__ = ((IData)(__PVT__t__BRA__25__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__39__KET__));
+    vlSelfRef.__PVT__t__BRA__48__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__5__KET__) 
+                                          ^ ((IData)(vlSelfRef.__PVT__t__BRA__40__KET__) 
+                                             & (IData)(vlSelfRef.__PVT__y__BRA__5__KET__)));
+    vlSelfRef.__PVT__z__BRA__4__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__40__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__1__KET__));
+    __PVT__t__BRA__43__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__40__KET__));
+    vlSelfRef.__PVT__t__BRA__41__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__40__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__37__KET__));
+    vlSelfRef.__PVT__z__BRA__12__KET__ = ((IData)(__PVT__t__BRA__43__KET__) 
+                                          & (IData)(vlSelfRef.__PVT__y__BRA__13__KET__));
+    vlSelfRef.__PVT__z__BRA__3__KET__ = ((IData)(__PVT__t__BRA__43__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__16__KET__));
+    __PVT__t__BRA__45__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__41__KET__));
+    vlSelfRef.__PVT__t__BRA__56__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__12__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__48__KET__));
+    __PVT__t__BRA__50__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__2__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__12__KET__));
+    __PVT__t__BRA__53__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__44__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__15__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__3__KET__));
+    vlSelfRef.__PVT__z__BRA__7__KET__ = ((IData)(__PVT__t__BRA__45__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__17__KET__));
+    vlSelfRef.__PVT__z__BRA__16__KET__ = ((IData)(__PVT__t__BRA__45__KET__) 
+                                          & (IData)(vlSelfRef.__PVT__y__BRA__14__KET__));
+    __PVT__t__BRA__57__KET__ = ((IData)(__PVT__t__BRA__50__KET__) 
+                                ^ (IData)(__PVT__t__BRA__53__KET__));
+    __PVT__t__BRA__54__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__11__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__7__KET__));
+    __PVT__t__BRA__52__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__7__KET__) 
+                                ^ ((IData)(vlSelfRef.__PVT__t__BRA__41__KET__) 
+                                   & (IData)(vlSelfRef.__PVT__y__BRA__10__KET__)));
+    vlSelfRef.__PVT__t__BRA__55__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__16__KET__) 
+                                          ^ ((IData)(vlSelfRef.__PVT__t__BRA__41__KET__) 
+                                             & (IData)(vlSelfRef.__PVT__y__BRA__8__KET__)));
+    __PVT__t__BRA__46__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__9__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__16__KET__));
+    __PVT__t__BRA__61__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__2__KET__)) 
+                                ^ (IData)(__PVT__t__BRA__57__KET__));
+    vlSelfRef.__PVT__t__BRA__59__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__3__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__54__KET__));
+    vlSelfRef.__PVT__t__BRA__60__KET__ = ((IData)(__PVT__t__BRA__46__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__57__KET__));
+    __PVT__t__BRA__58__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__4__KET__) 
+                                ^ (IData)(__PVT__t__BRA__46__KET__));
+    vlSelfRef.__PVT__t__BRA__64__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__4__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__59__KET__));
+    vlSelfRef.__PVT__t__BRA__63__KET__ = ((IData)(__PVT__t__BRA__49__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__58__KET__));
+    vlSelfRef.__PVT__t__BRA__62__KET__ = ((IData)(__PVT__t__BRA__52__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__58__KET__));
+    vlSelfRef.__PVT__t__BRA__66__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__37__KET__) 
+                                           & (IData)(vlSelfRef.__PVT__y__BRA__6__KET__)) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__63__KET__));
+    vlSelfRef.__PVT__t__BRA__65__KET__ = ((IData)(__PVT__t__BRA__61__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__62__KET__));
+    vlSelfRef.__VdfgRegularize_h224e5c7b_0_0 = ((IData)(__PVT__t__BRA__53__KET__) 
+                                                ^ (IData)(vlSelfRef.__PVT__t__BRA__66__KET__));
+    vlSelfRef.__PVT__t__BRA__67__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__64__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__65__KET__));
+    vlSelfRef.__PVT__t[0U] = (((((((((IData)(__PVT__t__BRA__31__KET__) 
+                                     << 3U) | ((IData)(__PVT__t__BRA__30__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                       << 1U) | (IData)(__PVT__t__BRA__28__KET__))) 
+                                  << 0x0000000cU) | 
+                                 (((((IData)(__PVT__t__BRA__27__KET__) 
+                                     << 3U) | ((IData)(__PVT__t__BRA__26__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(__PVT__t__BRA__25__KET__) 
+                                       << 1U) | (IData)(__PVT__t__BRA__24__KET__))) 
+                                  << 8U)) | ((((((IData)(__PVT__t__BRA__23__KET__) 
+                                                 << 3U) 
+                                                | ((IData)(__PVT__t__BRA__22__KET__) 
+                                                   << 2U)) 
+                                               | (((IData)(__PVT__t__BRA__21__KET__) 
+                                                   << 1U) 
+                                                  | (IData)(__PVT__t__BRA__20__KET__))) 
+                                              << 4U) 
+                                             | ((((IData)(__PVT__t__BRA__19__KET__) 
+                                                  << 3U) 
+                                                 | ((IData)(__PVT__t__BRA__18__KET__) 
+                                                    << 2U)) 
+                                                | (((IData)(__PVT__t__BRA__17__KET__) 
+                                                    << 1U) 
+                                                   | (IData)(__PVT__t__BRA__16__KET__))))) 
+                               << 0x00000010U) | ((
+                                                   (((((IData)(__PVT__t__BRA__15__KET__) 
+                                                       << 3U) 
+                                                      | ((IData)(__PVT__t__BRA__14__KET__) 
+                                                         << 2U)) 
+                                                     | (((IData)(__PVT__t__BRA__13__KET__) 
+                                                         << 1U) 
+                                                        | (IData)(__PVT__t__BRA__12__KET__))) 
+                                                    << 0x0000000cU) 
+                                                   | (((((IData)(__PVT__t__BRA__11__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(__PVT__t__BRA__10__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(__PVT__t__BRA__9__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(__PVT__t__BRA__8__KET__))) 
+                                                      << 8U)) 
+                                                  | ((((((IData)(__PVT__t__BRA__7__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(__PVT__t__BRA__6__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(__PVT__t__BRA__5__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(__PVT__t__BRA__4__KET__))) 
+                                                      << 4U) 
+                                                     | ((((IData)(__PVT__t__BRA__3__KET__) 
+                                                          << 3U) 
+                                                         | ((IData)(__PVT__t__BRA__2__KET__) 
+                                                            << 2U)) 
+                                                        | (((IData)(__PVT__t__BRA__1__KET__) 
+                                                            << 1U) 
+                                                           | (IData)(__PVT__t__BRA__0__KET__))))));
+    vlSelfRef.__PVT__t[1U] = (((((((((IData)(vlSelfRef.__PVT__t__BRA__63__KET__) 
+                                     << 3U) | ((IData)(vlSelfRef.__PVT__t__BRA__62__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(__PVT__t__BRA__61__KET__) 
+                                       << 1U) | (IData)(vlSelfRef.__PVT__t__BRA__60__KET__))) 
+                                  << 0x0000000cU) | 
+                                 (((((IData)(vlSelfRef.__PVT__t__BRA__59__KET__) 
+                                     << 3U) | ((IData)(__PVT__t__BRA__58__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(__PVT__t__BRA__57__KET__) 
+                                       << 1U) | (IData)(vlSelfRef.__PVT__t__BRA__56__KET__))) 
+                                  << 8U)) | ((((((IData)(vlSelfRef.__PVT__t__BRA__55__KET__) 
+                                                 << 3U) 
+                                                | ((IData)(__PVT__t__BRA__54__KET__) 
+                                                   << 2U)) 
+                                               | (((IData)(__PVT__t__BRA__53__KET__) 
+                                                   << 1U) 
+                                                  | (IData)(__PVT__t__BRA__52__KET__))) 
+                                              << 4U) 
+                                             | ((((IData)(vlSelfRef.__PVT__t__BRA__51__KET__) 
+                                                  << 3U) 
+                                                 | ((IData)(__PVT__t__BRA__50__KET__) 
+                                                    << 2U)) 
+                                                | (((IData)(__PVT__t__BRA__49__KET__) 
+                                                    << 1U) 
+                                                   | (IData)(vlSelfRef.__PVT__t__BRA__48__KET__))))) 
+                               << 0x00000010U) | ((
+                                                   (((((IData)(vlSelfRef.__PVT__t__BRA__47__KET__) 
+                                                       << 3U) 
+                                                      | ((IData)(__PVT__t__BRA__46__KET__) 
+                                                         << 2U)) 
+                                                     | (((IData)(__PVT__t__BRA__45__KET__) 
+                                                         << 1U) 
+                                                        | (IData)(vlSelfRef.__PVT__t__BRA__44__KET__))) 
+                                                    << 0x0000000cU) 
+                                                   | (((((IData)(__PVT__t__BRA__43__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(vlSelfRef.__PVT__t__BRA__41__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(vlSelfRef.__PVT__t__BRA__40__KET__))) 
+                                                      << 8U)) 
+                                                  | ((((((IData)(__PVT__t__BRA__39__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(__PVT__t__BRA__38__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(vlSelfRef.__PVT__t__BRA__37__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(__PVT__t__BRA__36__KET__))) 
+                                                      << 4U) 
+                                                     | ((((IData)(__PVT__t__BRA__35__KET__) 
+                                                          << 3U) 
+                                                         | ((IData)(__PVT__t__BRA__34__KET__) 
+                                                            << 2U)) 
+                                                        | (((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                                            << 1U) 
+                                                           | (IData)(__PVT__t__BRA__32__KET__))))));
+    vlSelfRef.__PVT__t[2U] = (0x0000000fU & ((((IData)(vlSelfRef.__PVT__t__BRA__67__KET__) 
+                                               << 3U) 
+                                              | ((IData)(vlSelfRef.__PVT__t__BRA__66__KET__) 
+                                                 << 2U)) 
+                                             | (((IData)(vlSelfRef.__PVT__t__BRA__65__KET__) 
+                                                 << 1U) 
+                                                | (IData)(vlSelfRef.__PVT__t__BRA__64__KET__))));
+}
+
+void Vaes_sbox___nba_sequent__TOP__aes__DOT__sb__DOT__gen_sbox__BRA__13__KET____DOT__sb__0(Vaes_sbox* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+          Vaes_sbox___nba_sequent__TOP__aes__DOT__sb__DOT__gen_sbox__BRA__13__KET____DOT__sb__0\n"); );
+    Vaes__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    auto& vlSelfRef = std::ref(*vlSelf).get();
+    // Locals
+    CData/*0:0*/ __PVT__t__BRA__61__KET__;
+    __PVT__t__BRA__61__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__58__KET__;
+    __PVT__t__BRA__58__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__57__KET__;
+    __PVT__t__BRA__57__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__54__KET__;
+    __PVT__t__BRA__54__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__53__KET__;
+    __PVT__t__BRA__53__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__52__KET__;
+    __PVT__t__BRA__52__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__50__KET__;
+    __PVT__t__BRA__50__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__49__KET__;
+    __PVT__t__BRA__49__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__46__KET__;
+    __PVT__t__BRA__46__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__45__KET__;
+    __PVT__t__BRA__45__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__43__KET__;
+    __PVT__t__BRA__43__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__39__KET__;
+    __PVT__t__BRA__39__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__38__KET__;
+    __PVT__t__BRA__38__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__36__KET__;
+    __PVT__t__BRA__36__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__35__KET__;
+    __PVT__t__BRA__35__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__34__KET__;
+    __PVT__t__BRA__34__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__32__KET__;
+    __PVT__t__BRA__32__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__31__KET__;
+    __PVT__t__BRA__31__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__30__KET__;
+    __PVT__t__BRA__30__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__28__KET__;
+    __PVT__t__BRA__28__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__27__KET__;
+    __PVT__t__BRA__27__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__26__KET__;
+    __PVT__t__BRA__26__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__25__KET__;
+    __PVT__t__BRA__25__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__24__KET__;
+    __PVT__t__BRA__24__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__23__KET__;
+    __PVT__t__BRA__23__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__22__KET__;
+    __PVT__t__BRA__22__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__21__KET__;
+    __PVT__t__BRA__21__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__20__KET__;
+    __PVT__t__BRA__20__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__19__KET__;
+    __PVT__t__BRA__19__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__18__KET__;
+    __PVT__t__BRA__18__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__17__KET__;
+    __PVT__t__BRA__17__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__16__KET__;
+    __PVT__t__BRA__16__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__15__KET__;
+    __PVT__t__BRA__15__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__14__KET__;
+    __PVT__t__BRA__14__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__13__KET__;
+    __PVT__t__BRA__13__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__12__KET__;
+    __PVT__t__BRA__12__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__11__KET__;
+    __PVT__t__BRA__11__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__10__KET__;
+    __PVT__t__BRA__10__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__9__KET__;
+    __PVT__t__BRA__9__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__8__KET__;
+    __PVT__t__BRA__8__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__7__KET__;
+    __PVT__t__BRA__7__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__6__KET__;
+    __PVT__t__BRA__6__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__5__KET__;
+    __PVT__t__BRA__5__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__4__KET__;
+    __PVT__t__BRA__4__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__3__KET__;
+    __PVT__t__BRA__3__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__2__KET__;
+    __PVT__t__BRA__2__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__1__KET__;
+    __PVT__t__BRA__1__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__0__KET__;
+    __PVT__t__BRA__0__KET__ = 0;
+    // Body
+    vlSelfRef.__PVT__y__BRA__8__KET__ = (1U & VL_REDXOR_16(
+                                                           (0x00002100U 
+                                                            & vlSymsp->TOP.aes__DOT__state_current[3U])));
+    __PVT__t__BRA__0__KET__ = (1U & VL_REDXOR_16((0x00000600U 
+                                                  & vlSymsp->TOP.aes__DOT__state_current[3U])));
+    vlSelfRef.__PVT__y__BRA__9__KET__ = (1U & VL_REDXOR_16(
+                                                           (0x00000900U 
+                                                            & vlSymsp->TOP.aes__DOT__state_current[3U])));
+    vlSelfRef.__PVT__y__BRA__14__KET__ = (1U & VL_REDXOR_16(
+                                                            (0x00002800U 
+                                                             & vlSymsp->TOP.aes__DOT__state_current[3U])));
+    vlSelfRef.__PVT__y__BRA__13__KET__ = (1U & VL_REDXOR_16(
+                                                            (0x00004100U 
+                                                             & vlSymsp->TOP.aes__DOT__state_current[3U])));
+    vlSelfRef.__PVT__y__BRA__1__KET__ = (1U & ((IData)(__PVT__t__BRA__0__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                  >> 0x0000000fU)));
+    vlSelfRef.__PVT__y__BRA__12__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__13__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__14__KET__));
+    vlSelfRef.__PVT__y__BRA__4__KET__ = (1U & ((IData)(vlSelfRef.__PVT__y__BRA__1__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                  >> 0x0000000bU)));
+    vlSelfRef.__PVT__y__BRA__2__KET__ = (1U & ((IData)(vlSelfRef.__PVT__y__BRA__1__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                  >> 8U)));
+    vlSelfRef.__PVT__y__BRA__5__KET__ = (1U & ((IData)(vlSelfRef.__PVT__y__BRA__1__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                  >> 0x0000000eU)));
+    __PVT__t__BRA__1__KET__ = (1U & ((vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                      >> 0x0000000cU) 
+                                     ^ (IData)(vlSelfRef.__PVT__y__BRA__12__KET__)));
+    __PVT__t__BRA__5__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__4__KET__) 
+                               & (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                  >> 0x0000000fU));
+    vlSelfRef.__PVT__y__BRA__3__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__5__KET__) 
+                                         ^ (IData)(vlSelfRef.__PVT__y__BRA__8__KET__));
+    __PVT__t__BRA__8__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__5__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__1__KET__));
+    vlSelfRef.__PVT__y__BRA__15__KET__ = (1U & ((IData)(__PVT__t__BRA__1__KET__) 
+                                                ^ (
+                                                   vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                   >> 0x0000000dU)));
+    vlSelfRef.__PVT__y__BRA__20__KET__ = (1U & ((IData)(__PVT__t__BRA__1__KET__) 
+                                                ^ (
+                                                   vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                   >> 9U)));
+    vlSelfRef.__PVT__y__BRA__6__KET__ = (1U & ((IData)(vlSelfRef.__PVT__y__BRA__15__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                  >> 0x0000000fU)));
+    __PVT__t__BRA__2__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__12__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__15__KET__));
+    vlSelfRef.__PVT__y__BRA__10__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__15__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__0__KET__));
+    vlSelfRef.__PVT__y__BRA__11__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__20__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__9__KET__));
+    __PVT__t__BRA__3__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__3__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__6__KET__));
+    __PVT__t__BRA__6__KET__ = ((IData)(__PVT__t__BRA__5__KET__) 
+                               ^ (IData)(__PVT__t__BRA__2__KET__));
+    __PVT__t__BRA__15__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__8__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__10__KET__));
+    vlSelfRef.__PVT__y__BRA__7__KET__ = (1U & ((vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                >> 0x0000000fU) 
+                                               ^ (IData)(vlSelfRef.__PVT__y__BRA__11__KET__)));
+    vlSelfRef.__PVT__y__BRA__17__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__10__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__11__KET__));
+    __PVT__t__BRA__12__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__9__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__11__KET__));
+    vlSelfRef.__PVT__y__BRA__16__KET__ = ((IData)(__PVT__t__BRA__0__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__11__KET__));
+    __PVT__t__BRA__4__KET__ = ((IData)(__PVT__t__BRA__3__KET__) 
+                               ^ (IData)(__PVT__t__BRA__2__KET__));
+    __PVT__t__BRA__10__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__2__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__7__KET__));
+    __PVT__t__BRA__13__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__14__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__17__KET__));
+    __PVT__t__BRA__16__KET__ = ((IData)(__PVT__t__BRA__15__KET__) 
+                                ^ (IData)(__PVT__t__BRA__12__KET__));
+    __PVT__t__BRA__7__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__13__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__16__KET__));
+    __PVT__t__BRA__14__KET__ = ((IData)(__PVT__t__BRA__13__KET__) 
+                                ^ (IData)(__PVT__t__BRA__12__KET__));
+    __PVT__t__BRA__18__KET__ = ((IData)(__PVT__t__BRA__6__KET__) 
+                                ^ (IData)(__PVT__t__BRA__16__KET__));
+    __PVT__t__BRA__9__KET__ = ((IData)(__PVT__t__BRA__8__KET__) 
+                               ^ (IData)(__PVT__t__BRA__7__KET__));
+    __PVT__t__BRA__11__KET__ = ((IData)(__PVT__t__BRA__10__KET__) 
+                                ^ (IData)(__PVT__t__BRA__7__KET__));
+    __PVT__t__BRA__17__KET__ = ((IData)(__PVT__t__BRA__4__KET__) 
+                                ^ (IData)(__PVT__t__BRA__14__KET__));
+    __PVT__t__BRA__22__KET__ = ((IData)(__PVT__t__BRA__18__KET__) 
+                                ^ ((IData)(vlSelfRef.__PVT__y__BRA__10__KET__) 
+                                   ^ (IData)(vlSelfRef.__PVT__y__BRA__8__KET__)));
+    __PVT__t__BRA__19__KET__ = ((IData)(__PVT__t__BRA__9__KET__) 
+                                ^ (IData)(__PVT__t__BRA__14__KET__));
+    __PVT__t__BRA__20__KET__ = ((IData)(__PVT__t__BRA__11__KET__) 
+                                ^ (IData)(__PVT__t__BRA__16__KET__));
+    __PVT__t__BRA__21__KET__ = ((IData)(__PVT__t__BRA__17__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__y__BRA__20__KET__));
+    __PVT__t__BRA__23__KET__ = ((IData)(__PVT__t__BRA__19__KET__) 
+                                ^ ((IData)(vlSelfRef.__PVT__y__BRA__13__KET__) 
+                                   ^ (IData)(vlSelfRef.__PVT__y__BRA__16__KET__)));
+    __PVT__t__BRA__24__KET__ = (1U & ((IData)(__PVT__t__BRA__20__KET__) 
+                                      ^ ((vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                          >> 8U) ^ (IData)(vlSelfRef.__PVT__y__BRA__16__KET__))));
+    __PVT__t__BRA__25__KET__ = ((IData)(__PVT__t__BRA__21__KET__) 
+                                ^ (IData)(__PVT__t__BRA__22__KET__));
+    __PVT__t__BRA__26__KET__ = ((IData)(__PVT__t__BRA__21__KET__) 
+                                & (IData)(__PVT__t__BRA__23__KET__));
+    __PVT__t__BRA__30__KET__ = ((IData)(__PVT__t__BRA__23__KET__) 
+                                ^ (IData)(__PVT__t__BRA__24__KET__));
+    __PVT__t__BRA__31__KET__ = ((IData)(__PVT__t__BRA__22__KET__) 
+                                ^ (IData)(__PVT__t__BRA__26__KET__));
+    __PVT__t__BRA__27__KET__ = ((IData)(__PVT__t__BRA__24__KET__) 
+                                ^ (IData)(__PVT__t__BRA__26__KET__));
+    __PVT__t__BRA__32__KET__ = ((IData)(__PVT__t__BRA__31__KET__) 
+                                & (IData)(__PVT__t__BRA__30__KET__));
+    __PVT__t__BRA__28__KET__ = ((IData)(__PVT__t__BRA__25__KET__) 
+                                & (IData)(__PVT__t__BRA__27__KET__));
+    vlSelfRef.__PVT__t__BRA__33__KET__ = ((IData)(__PVT__t__BRA__32__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__24__KET__));
+    vlSelfRef.__PVT__t__BRA__29__KET__ = ((IData)(__PVT__t__BRA__28__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__22__KET__));
+    vlSelfRef.__PVT__z__BRA__2__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                         & (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                            >> 0x0000000fU));
+    __PVT__t__BRA__34__KET__ = ((IData)(__PVT__t__BRA__23__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__33__KET__));
+    __PVT__t__BRA__35__KET__ = ((IData)(__PVT__t__BRA__27__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__33__KET__));
+    vlSelfRef.__PVT__z__BRA__5__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__7__KET__));
+    vlSelfRef.__PVT__t__BRA__42__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__33__KET__));
+    __PVT__t__BRA__36__KET__ = ((IData)(__PVT__t__BRA__24__KET__) 
+                                & (IData)(__PVT__t__BRA__35__KET__));
+    vlSelfRef.__PVT__t__BRA__51__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__2__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__z__BRA__5__KET__));
+    vlSelfRef.__PVT__t__BRA__37__KET__ = ((IData)(__PVT__t__BRA__36__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__34__KET__));
+    __PVT__t__BRA__38__KET__ = ((IData)(__PVT__t__BRA__27__KET__) 
+                                ^ (IData)(__PVT__t__BRA__36__KET__));
+    vlSelfRef.__PVT__z__BRA__10__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__37__KET__) 
+                                          & (IData)(vlSelfRef.__PVT__y__BRA__3__KET__));
+    vlSelfRef.__PVT__t__BRA__44__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__37__KET__));
+    __PVT__t__BRA__39__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                & (IData)(__PVT__t__BRA__38__KET__));
+    vlSelfRef.__PVT__t__BRA__47__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__10__KET__) 
+                                          ^ ((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                             & (IData)(vlSelfRef.__PVT__y__BRA__4__KET__)));
+    __PVT__t__BRA__49__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__44__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__12__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__10__KET__));
+    vlSelfRef.__PVT__t__BRA__40__KET__ = ((IData)(__PVT__t__BRA__25__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__39__KET__));
+    vlSelfRef.__PVT__t__BRA__48__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__5__KET__) 
+                                          ^ ((IData)(vlSelfRef.__PVT__t__BRA__40__KET__) 
+                                             & (IData)(vlSelfRef.__PVT__y__BRA__5__KET__)));
+    vlSelfRef.__PVT__z__BRA__4__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__40__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__1__KET__));
+    __PVT__t__BRA__43__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__40__KET__));
+    vlSelfRef.__PVT__t__BRA__41__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__40__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__37__KET__));
+    vlSelfRef.__PVT__z__BRA__12__KET__ = ((IData)(__PVT__t__BRA__43__KET__) 
+                                          & (IData)(vlSelfRef.__PVT__y__BRA__13__KET__));
+    vlSelfRef.__PVT__z__BRA__3__KET__ = ((IData)(__PVT__t__BRA__43__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__16__KET__));
+    __PVT__t__BRA__45__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__41__KET__));
+    vlSelfRef.__PVT__t__BRA__56__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__12__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__48__KET__));
+    __PVT__t__BRA__50__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__2__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__12__KET__));
+    __PVT__t__BRA__53__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__44__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__15__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__3__KET__));
+    vlSelfRef.__PVT__z__BRA__7__KET__ = ((IData)(__PVT__t__BRA__45__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__17__KET__));
+    vlSelfRef.__PVT__z__BRA__16__KET__ = ((IData)(__PVT__t__BRA__45__KET__) 
+                                          & (IData)(vlSelfRef.__PVT__y__BRA__14__KET__));
+    __PVT__t__BRA__57__KET__ = ((IData)(__PVT__t__BRA__50__KET__) 
+                                ^ (IData)(__PVT__t__BRA__53__KET__));
+    __PVT__t__BRA__54__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__11__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__7__KET__));
+    __PVT__t__BRA__52__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__7__KET__) 
+                                ^ ((IData)(vlSelfRef.__PVT__t__BRA__41__KET__) 
+                                   & (IData)(vlSelfRef.__PVT__y__BRA__10__KET__)));
+    vlSelfRef.__PVT__t__BRA__55__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__16__KET__) 
+                                          ^ ((IData)(vlSelfRef.__PVT__t__BRA__41__KET__) 
+                                             & (IData)(vlSelfRef.__PVT__y__BRA__8__KET__)));
+    __PVT__t__BRA__46__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__9__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__16__KET__));
+    __PVT__t__BRA__61__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__2__KET__)) 
+                                ^ (IData)(__PVT__t__BRA__57__KET__));
+    vlSelfRef.__PVT__t__BRA__59__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__3__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__54__KET__));
+    vlSelfRef.__PVT__t__BRA__60__KET__ = ((IData)(__PVT__t__BRA__46__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__57__KET__));
+    __PVT__t__BRA__58__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__4__KET__) 
+                                ^ (IData)(__PVT__t__BRA__46__KET__));
+    vlSelfRef.__PVT__t__BRA__64__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__4__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__59__KET__));
+    vlSelfRef.__PVT__t__BRA__63__KET__ = ((IData)(__PVT__t__BRA__49__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__58__KET__));
+    vlSelfRef.__PVT__t__BRA__62__KET__ = ((IData)(__PVT__t__BRA__52__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__58__KET__));
+    vlSelfRef.__PVT__t__BRA__66__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__37__KET__) 
+                                           & (IData)(vlSelfRef.__PVT__y__BRA__6__KET__)) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__63__KET__));
+    vlSelfRef.__PVT__t__BRA__65__KET__ = ((IData)(__PVT__t__BRA__61__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__62__KET__));
+    vlSelfRef.__VdfgRegularize_h224e5c7b_0_0 = ((IData)(__PVT__t__BRA__53__KET__) 
+                                                ^ (IData)(vlSelfRef.__PVT__t__BRA__66__KET__));
+    vlSelfRef.__PVT__t__BRA__67__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__64__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__65__KET__));
+    vlSelfRef.__PVT__t[0U] = (((((((((IData)(__PVT__t__BRA__31__KET__) 
+                                     << 3U) | ((IData)(__PVT__t__BRA__30__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                       << 1U) | (IData)(__PVT__t__BRA__28__KET__))) 
+                                  << 0x0000000cU) | 
+                                 (((((IData)(__PVT__t__BRA__27__KET__) 
+                                     << 3U) | ((IData)(__PVT__t__BRA__26__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(__PVT__t__BRA__25__KET__) 
+                                       << 1U) | (IData)(__PVT__t__BRA__24__KET__))) 
+                                  << 8U)) | ((((((IData)(__PVT__t__BRA__23__KET__) 
+                                                 << 3U) 
+                                                | ((IData)(__PVT__t__BRA__22__KET__) 
+                                                   << 2U)) 
+                                               | (((IData)(__PVT__t__BRA__21__KET__) 
+                                                   << 1U) 
+                                                  | (IData)(__PVT__t__BRA__20__KET__))) 
+                                              << 4U) 
+                                             | ((((IData)(__PVT__t__BRA__19__KET__) 
+                                                  << 3U) 
+                                                 | ((IData)(__PVT__t__BRA__18__KET__) 
+                                                    << 2U)) 
+                                                | (((IData)(__PVT__t__BRA__17__KET__) 
+                                                    << 1U) 
+                                                   | (IData)(__PVT__t__BRA__16__KET__))))) 
+                               << 0x00000010U) | ((
+                                                   (((((IData)(__PVT__t__BRA__15__KET__) 
+                                                       << 3U) 
+                                                      | ((IData)(__PVT__t__BRA__14__KET__) 
+                                                         << 2U)) 
+                                                     | (((IData)(__PVT__t__BRA__13__KET__) 
+                                                         << 1U) 
+                                                        | (IData)(__PVT__t__BRA__12__KET__))) 
+                                                    << 0x0000000cU) 
+                                                   | (((((IData)(__PVT__t__BRA__11__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(__PVT__t__BRA__10__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(__PVT__t__BRA__9__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(__PVT__t__BRA__8__KET__))) 
+                                                      << 8U)) 
+                                                  | ((((((IData)(__PVT__t__BRA__7__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(__PVT__t__BRA__6__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(__PVT__t__BRA__5__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(__PVT__t__BRA__4__KET__))) 
+                                                      << 4U) 
+                                                     | ((((IData)(__PVT__t__BRA__3__KET__) 
+                                                          << 3U) 
+                                                         | ((IData)(__PVT__t__BRA__2__KET__) 
+                                                            << 2U)) 
+                                                        | (((IData)(__PVT__t__BRA__1__KET__) 
+                                                            << 1U) 
+                                                           | (IData)(__PVT__t__BRA__0__KET__))))));
+    vlSelfRef.__PVT__t[1U] = (((((((((IData)(vlSelfRef.__PVT__t__BRA__63__KET__) 
+                                     << 3U) | ((IData)(vlSelfRef.__PVT__t__BRA__62__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(__PVT__t__BRA__61__KET__) 
+                                       << 1U) | (IData)(vlSelfRef.__PVT__t__BRA__60__KET__))) 
+                                  << 0x0000000cU) | 
+                                 (((((IData)(vlSelfRef.__PVT__t__BRA__59__KET__) 
+                                     << 3U) | ((IData)(__PVT__t__BRA__58__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(__PVT__t__BRA__57__KET__) 
+                                       << 1U) | (IData)(vlSelfRef.__PVT__t__BRA__56__KET__))) 
+                                  << 8U)) | ((((((IData)(vlSelfRef.__PVT__t__BRA__55__KET__) 
+                                                 << 3U) 
+                                                | ((IData)(__PVT__t__BRA__54__KET__) 
+                                                   << 2U)) 
+                                               | (((IData)(__PVT__t__BRA__53__KET__) 
+                                                   << 1U) 
+                                                  | (IData)(__PVT__t__BRA__52__KET__))) 
+                                              << 4U) 
+                                             | ((((IData)(vlSelfRef.__PVT__t__BRA__51__KET__) 
+                                                  << 3U) 
+                                                 | ((IData)(__PVT__t__BRA__50__KET__) 
+                                                    << 2U)) 
+                                                | (((IData)(__PVT__t__BRA__49__KET__) 
+                                                    << 1U) 
+                                                   | (IData)(vlSelfRef.__PVT__t__BRA__48__KET__))))) 
+                               << 0x00000010U) | ((
+                                                   (((((IData)(vlSelfRef.__PVT__t__BRA__47__KET__) 
+                                                       << 3U) 
+                                                      | ((IData)(__PVT__t__BRA__46__KET__) 
+                                                         << 2U)) 
+                                                     | (((IData)(__PVT__t__BRA__45__KET__) 
+                                                         << 1U) 
+                                                        | (IData)(vlSelfRef.__PVT__t__BRA__44__KET__))) 
+                                                    << 0x0000000cU) 
+                                                   | (((((IData)(__PVT__t__BRA__43__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(vlSelfRef.__PVT__t__BRA__41__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(vlSelfRef.__PVT__t__BRA__40__KET__))) 
+                                                      << 8U)) 
+                                                  | ((((((IData)(__PVT__t__BRA__39__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(__PVT__t__BRA__38__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(vlSelfRef.__PVT__t__BRA__37__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(__PVT__t__BRA__36__KET__))) 
+                                                      << 4U) 
+                                                     | ((((IData)(__PVT__t__BRA__35__KET__) 
+                                                          << 3U) 
+                                                         | ((IData)(__PVT__t__BRA__34__KET__) 
+                                                            << 2U)) 
+                                                        | (((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                                            << 1U) 
+                                                           | (IData)(__PVT__t__BRA__32__KET__))))));
+    vlSelfRef.__PVT__t[2U] = (0x0000000fU & ((((IData)(vlSelfRef.__PVT__t__BRA__67__KET__) 
+                                               << 3U) 
+                                              | ((IData)(vlSelfRef.__PVT__t__BRA__66__KET__) 
+                                                 << 2U)) 
+                                             | (((IData)(vlSelfRef.__PVT__t__BRA__65__KET__) 
+                                                 << 1U) 
+                                                | (IData)(vlSelfRef.__PVT__t__BRA__64__KET__))));
+}
+
+void Vaes_sbox___nba_sequent__TOP__aes__DOT__sb__DOT__gen_sbox__BRA__14__KET____DOT__sb__0(Vaes_sbox* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+          Vaes_sbox___nba_sequent__TOP__aes__DOT__sb__DOT__gen_sbox__BRA__14__KET____DOT__sb__0\n"); );
+    Vaes__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    auto& vlSelfRef = std::ref(*vlSelf).get();
+    // Locals
+    CData/*0:0*/ __PVT__t__BRA__61__KET__;
+    __PVT__t__BRA__61__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__58__KET__;
+    __PVT__t__BRA__58__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__57__KET__;
+    __PVT__t__BRA__57__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__54__KET__;
+    __PVT__t__BRA__54__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__53__KET__;
+    __PVT__t__BRA__53__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__52__KET__;
+    __PVT__t__BRA__52__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__50__KET__;
+    __PVT__t__BRA__50__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__49__KET__;
+    __PVT__t__BRA__49__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__46__KET__;
+    __PVT__t__BRA__46__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__45__KET__;
+    __PVT__t__BRA__45__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__43__KET__;
+    __PVT__t__BRA__43__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__39__KET__;
+    __PVT__t__BRA__39__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__38__KET__;
+    __PVT__t__BRA__38__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__36__KET__;
+    __PVT__t__BRA__36__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__35__KET__;
+    __PVT__t__BRA__35__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__34__KET__;
+    __PVT__t__BRA__34__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__32__KET__;
+    __PVT__t__BRA__32__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__31__KET__;
+    __PVT__t__BRA__31__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__30__KET__;
+    __PVT__t__BRA__30__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__28__KET__;
+    __PVT__t__BRA__28__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__27__KET__;
+    __PVT__t__BRA__27__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__26__KET__;
+    __PVT__t__BRA__26__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__25__KET__;
+    __PVT__t__BRA__25__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__24__KET__;
+    __PVT__t__BRA__24__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__23__KET__;
+    __PVT__t__BRA__23__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__22__KET__;
+    __PVT__t__BRA__22__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__21__KET__;
+    __PVT__t__BRA__21__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__20__KET__;
+    __PVT__t__BRA__20__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__19__KET__;
+    __PVT__t__BRA__19__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__18__KET__;
+    __PVT__t__BRA__18__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__17__KET__;
+    __PVT__t__BRA__17__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__16__KET__;
+    __PVT__t__BRA__16__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__15__KET__;
+    __PVT__t__BRA__15__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__14__KET__;
+    __PVT__t__BRA__14__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__13__KET__;
+    __PVT__t__BRA__13__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__12__KET__;
+    __PVT__t__BRA__12__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__11__KET__;
+    __PVT__t__BRA__11__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__10__KET__;
+    __PVT__t__BRA__10__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__9__KET__;
+    __PVT__t__BRA__9__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__8__KET__;
+    __PVT__t__BRA__8__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__7__KET__;
+    __PVT__t__BRA__7__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__6__KET__;
+    __PVT__t__BRA__6__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__5__KET__;
+    __PVT__t__BRA__5__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__4__KET__;
+    __PVT__t__BRA__4__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__3__KET__;
+    __PVT__t__BRA__3__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__2__KET__;
+    __PVT__t__BRA__2__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__1__KET__;
+    __PVT__t__BRA__1__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__0__KET__;
+    __PVT__t__BRA__0__KET__ = 0;
+    // Body
+    vlSelfRef.__PVT__y__BRA__8__KET__ = (1U & VL_REDXOR_32(
+                                                           (0x00210000U 
+                                                            & vlSymsp->TOP.aes__DOT__state_current[3U])));
+    __PVT__t__BRA__0__KET__ = (1U & VL_REDXOR_32((0x00060000U 
+                                                  & vlSymsp->TOP.aes__DOT__state_current[3U])));
+    vlSelfRef.__PVT__y__BRA__9__KET__ = (1U & VL_REDXOR_32(
+                                                           (0x00090000U 
+                                                            & vlSymsp->TOP.aes__DOT__state_current[3U])));
+    vlSelfRef.__PVT__y__BRA__14__KET__ = (1U & VL_REDXOR_32(
+                                                            (0x00280000U 
+                                                             & vlSymsp->TOP.aes__DOT__state_current[3U])));
+    vlSelfRef.__PVT__y__BRA__13__KET__ = (1U & VL_REDXOR_32(
+                                                            (0x00410000U 
+                                                             & vlSymsp->TOP.aes__DOT__state_current[3U])));
+    vlSelfRef.__PVT__y__BRA__1__KET__ = (1U & ((IData)(__PVT__t__BRA__0__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                  >> 0x00000017U)));
+    vlSelfRef.__PVT__y__BRA__12__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__13__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__14__KET__));
+    vlSelfRef.__PVT__y__BRA__4__KET__ = (1U & ((IData)(vlSelfRef.__PVT__y__BRA__1__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                  >> 0x00000013U)));
+    vlSelfRef.__PVT__y__BRA__2__KET__ = (1U & ((IData)(vlSelfRef.__PVT__y__BRA__1__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                  >> 0x00000010U)));
+    vlSelfRef.__PVT__y__BRA__5__KET__ = (1U & ((IData)(vlSelfRef.__PVT__y__BRA__1__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                  >> 0x00000016U)));
+    __PVT__t__BRA__1__KET__ = (1U & ((vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                      >> 0x00000014U) 
+                                     ^ (IData)(vlSelfRef.__PVT__y__BRA__12__KET__)));
+    __PVT__t__BRA__5__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__4__KET__) 
+                               & (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                  >> 0x00000017U));
+    vlSelfRef.__PVT__y__BRA__3__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__5__KET__) 
+                                         ^ (IData)(vlSelfRef.__PVT__y__BRA__8__KET__));
+    __PVT__t__BRA__8__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__5__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__1__KET__));
+    vlSelfRef.__PVT__y__BRA__15__KET__ = (1U & ((IData)(__PVT__t__BRA__1__KET__) 
+                                                ^ (
+                                                   vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                   >> 0x00000015U)));
+    vlSelfRef.__PVT__y__BRA__20__KET__ = (1U & ((IData)(__PVT__t__BRA__1__KET__) 
+                                                ^ (
+                                                   vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                   >> 0x00000011U)));
+    vlSelfRef.__PVT__y__BRA__6__KET__ = (1U & ((IData)(vlSelfRef.__PVT__y__BRA__15__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                  >> 0x00000017U)));
+    __PVT__t__BRA__2__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__12__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__15__KET__));
+    vlSelfRef.__PVT__y__BRA__10__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__15__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__0__KET__));
+    vlSelfRef.__PVT__y__BRA__11__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__20__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__9__KET__));
+    __PVT__t__BRA__3__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__3__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__6__KET__));
+    __PVT__t__BRA__6__KET__ = ((IData)(__PVT__t__BRA__5__KET__) 
+                               ^ (IData)(__PVT__t__BRA__2__KET__));
+    __PVT__t__BRA__15__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__8__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__10__KET__));
+    vlSelfRef.__PVT__y__BRA__7__KET__ = (1U & ((vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                >> 0x00000017U) 
+                                               ^ (IData)(vlSelfRef.__PVT__y__BRA__11__KET__)));
+    vlSelfRef.__PVT__y__BRA__17__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__10__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__11__KET__));
+    __PVT__t__BRA__12__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__9__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__11__KET__));
+    vlSelfRef.__PVT__y__BRA__16__KET__ = ((IData)(__PVT__t__BRA__0__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__11__KET__));
+    __PVT__t__BRA__4__KET__ = ((IData)(__PVT__t__BRA__3__KET__) 
+                               ^ (IData)(__PVT__t__BRA__2__KET__));
+    __PVT__t__BRA__10__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__2__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__7__KET__));
+    __PVT__t__BRA__13__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__14__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__17__KET__));
+    __PVT__t__BRA__16__KET__ = ((IData)(__PVT__t__BRA__15__KET__) 
+                                ^ (IData)(__PVT__t__BRA__12__KET__));
+    __PVT__t__BRA__7__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__13__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__16__KET__));
+    __PVT__t__BRA__14__KET__ = ((IData)(__PVT__t__BRA__13__KET__) 
+                                ^ (IData)(__PVT__t__BRA__12__KET__));
+    __PVT__t__BRA__18__KET__ = ((IData)(__PVT__t__BRA__6__KET__) 
+                                ^ (IData)(__PVT__t__BRA__16__KET__));
+    __PVT__t__BRA__9__KET__ = ((IData)(__PVT__t__BRA__8__KET__) 
+                               ^ (IData)(__PVT__t__BRA__7__KET__));
+    __PVT__t__BRA__11__KET__ = ((IData)(__PVT__t__BRA__10__KET__) 
+                                ^ (IData)(__PVT__t__BRA__7__KET__));
+    __PVT__t__BRA__17__KET__ = ((IData)(__PVT__t__BRA__4__KET__) 
+                                ^ (IData)(__PVT__t__BRA__14__KET__));
+    __PVT__t__BRA__22__KET__ = ((IData)(__PVT__t__BRA__18__KET__) 
+                                ^ ((IData)(vlSelfRef.__PVT__y__BRA__10__KET__) 
+                                   ^ (IData)(vlSelfRef.__PVT__y__BRA__8__KET__)));
+    __PVT__t__BRA__19__KET__ = ((IData)(__PVT__t__BRA__9__KET__) 
+                                ^ (IData)(__PVT__t__BRA__14__KET__));
+    __PVT__t__BRA__20__KET__ = ((IData)(__PVT__t__BRA__11__KET__) 
+                                ^ (IData)(__PVT__t__BRA__16__KET__));
+    __PVT__t__BRA__21__KET__ = ((IData)(__PVT__t__BRA__17__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__y__BRA__20__KET__));
+    __PVT__t__BRA__23__KET__ = ((IData)(__PVT__t__BRA__19__KET__) 
+                                ^ ((IData)(vlSelfRef.__PVT__y__BRA__13__KET__) 
+                                   ^ (IData)(vlSelfRef.__PVT__y__BRA__16__KET__)));
+    __PVT__t__BRA__24__KET__ = (1U & ((IData)(__PVT__t__BRA__20__KET__) 
+                                      ^ ((vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                          >> 0x00000010U) 
+                                         ^ (IData)(vlSelfRef.__PVT__y__BRA__16__KET__))));
+    __PVT__t__BRA__25__KET__ = ((IData)(__PVT__t__BRA__21__KET__) 
+                                ^ (IData)(__PVT__t__BRA__22__KET__));
+    __PVT__t__BRA__26__KET__ = ((IData)(__PVT__t__BRA__21__KET__) 
+                                & (IData)(__PVT__t__BRA__23__KET__));
+    __PVT__t__BRA__30__KET__ = ((IData)(__PVT__t__BRA__23__KET__) 
+                                ^ (IData)(__PVT__t__BRA__24__KET__));
+    __PVT__t__BRA__31__KET__ = ((IData)(__PVT__t__BRA__22__KET__) 
+                                ^ (IData)(__PVT__t__BRA__26__KET__));
+    __PVT__t__BRA__27__KET__ = ((IData)(__PVT__t__BRA__24__KET__) 
+                                ^ (IData)(__PVT__t__BRA__26__KET__));
+    __PVT__t__BRA__32__KET__ = ((IData)(__PVT__t__BRA__31__KET__) 
+                                & (IData)(__PVT__t__BRA__30__KET__));
+    __PVT__t__BRA__28__KET__ = ((IData)(__PVT__t__BRA__25__KET__) 
+                                & (IData)(__PVT__t__BRA__27__KET__));
+    vlSelfRef.__PVT__t__BRA__33__KET__ = ((IData)(__PVT__t__BRA__32__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__24__KET__));
+    vlSelfRef.__PVT__t__BRA__29__KET__ = ((IData)(__PVT__t__BRA__28__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__22__KET__));
+    vlSelfRef.__PVT__z__BRA__2__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                         & (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                            >> 0x00000017U));
+    __PVT__t__BRA__34__KET__ = ((IData)(__PVT__t__BRA__23__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__33__KET__));
+    __PVT__t__BRA__35__KET__ = ((IData)(__PVT__t__BRA__27__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__33__KET__));
+    vlSelfRef.__PVT__z__BRA__5__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__7__KET__));
+    vlSelfRef.__PVT__t__BRA__42__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__33__KET__));
+    __PVT__t__BRA__36__KET__ = ((IData)(__PVT__t__BRA__24__KET__) 
+                                & (IData)(__PVT__t__BRA__35__KET__));
+    vlSelfRef.__PVT__t__BRA__51__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__2__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__z__BRA__5__KET__));
+    vlSelfRef.__PVT__t__BRA__37__KET__ = ((IData)(__PVT__t__BRA__36__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__34__KET__));
+    __PVT__t__BRA__38__KET__ = ((IData)(__PVT__t__BRA__27__KET__) 
+                                ^ (IData)(__PVT__t__BRA__36__KET__));
+    vlSelfRef.__PVT__z__BRA__10__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__37__KET__) 
+                                          & (IData)(vlSelfRef.__PVT__y__BRA__3__KET__));
+    vlSelfRef.__PVT__t__BRA__44__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__37__KET__));
+    __PVT__t__BRA__39__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                & (IData)(__PVT__t__BRA__38__KET__));
+    vlSelfRef.__PVT__t__BRA__47__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__10__KET__) 
+                                          ^ ((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                             & (IData)(vlSelfRef.__PVT__y__BRA__4__KET__)));
+    __PVT__t__BRA__49__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__44__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__12__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__10__KET__));
+    vlSelfRef.__PVT__t__BRA__40__KET__ = ((IData)(__PVT__t__BRA__25__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__39__KET__));
+    vlSelfRef.__PVT__t__BRA__48__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__5__KET__) 
+                                          ^ ((IData)(vlSelfRef.__PVT__t__BRA__40__KET__) 
+                                             & (IData)(vlSelfRef.__PVT__y__BRA__5__KET__)));
+    vlSelfRef.__PVT__z__BRA__4__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__40__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__1__KET__));
+    __PVT__t__BRA__43__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__40__KET__));
+    vlSelfRef.__PVT__t__BRA__41__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__40__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__37__KET__));
+    vlSelfRef.__PVT__z__BRA__12__KET__ = ((IData)(__PVT__t__BRA__43__KET__) 
+                                          & (IData)(vlSelfRef.__PVT__y__BRA__13__KET__));
+    vlSelfRef.__PVT__z__BRA__3__KET__ = ((IData)(__PVT__t__BRA__43__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__16__KET__));
+    __PVT__t__BRA__45__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__41__KET__));
+    vlSelfRef.__PVT__t__BRA__56__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__12__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__48__KET__));
+    __PVT__t__BRA__50__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__2__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__12__KET__));
+    __PVT__t__BRA__53__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__44__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__15__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__3__KET__));
+    vlSelfRef.__PVT__z__BRA__7__KET__ = ((IData)(__PVT__t__BRA__45__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__17__KET__));
+    vlSelfRef.__PVT__z__BRA__16__KET__ = ((IData)(__PVT__t__BRA__45__KET__) 
+                                          & (IData)(vlSelfRef.__PVT__y__BRA__14__KET__));
+    __PVT__t__BRA__57__KET__ = ((IData)(__PVT__t__BRA__50__KET__) 
+                                ^ (IData)(__PVT__t__BRA__53__KET__));
+    __PVT__t__BRA__54__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__11__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__7__KET__));
+    __PVT__t__BRA__52__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__7__KET__) 
+                                ^ ((IData)(vlSelfRef.__PVT__t__BRA__41__KET__) 
+                                   & (IData)(vlSelfRef.__PVT__y__BRA__10__KET__)));
+    vlSelfRef.__PVT__t__BRA__55__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__16__KET__) 
+                                          ^ ((IData)(vlSelfRef.__PVT__t__BRA__41__KET__) 
+                                             & (IData)(vlSelfRef.__PVT__y__BRA__8__KET__)));
+    __PVT__t__BRA__46__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__9__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__16__KET__));
+    __PVT__t__BRA__61__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__2__KET__)) 
+                                ^ (IData)(__PVT__t__BRA__57__KET__));
+    vlSelfRef.__PVT__t__BRA__59__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__3__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__54__KET__));
+    vlSelfRef.__PVT__t__BRA__60__KET__ = ((IData)(__PVT__t__BRA__46__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__57__KET__));
+    __PVT__t__BRA__58__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__4__KET__) 
+                                ^ (IData)(__PVT__t__BRA__46__KET__));
+    vlSelfRef.__PVT__t__BRA__64__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__4__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__59__KET__));
+    vlSelfRef.__PVT__t__BRA__63__KET__ = ((IData)(__PVT__t__BRA__49__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__58__KET__));
+    vlSelfRef.__PVT__t__BRA__62__KET__ = ((IData)(__PVT__t__BRA__52__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__58__KET__));
+    vlSelfRef.__PVT__t__BRA__66__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__37__KET__) 
+                                           & (IData)(vlSelfRef.__PVT__y__BRA__6__KET__)) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__63__KET__));
+    vlSelfRef.__PVT__t__BRA__65__KET__ = ((IData)(__PVT__t__BRA__61__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__62__KET__));
+    vlSelfRef.__VdfgRegularize_h224e5c7b_0_0 = ((IData)(__PVT__t__BRA__53__KET__) 
+                                                ^ (IData)(vlSelfRef.__PVT__t__BRA__66__KET__));
+    vlSelfRef.__PVT__t__BRA__67__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__64__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__65__KET__));
+    vlSelfRef.__PVT__t[0U] = (((((((((IData)(__PVT__t__BRA__31__KET__) 
+                                     << 3U) | ((IData)(__PVT__t__BRA__30__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                       << 1U) | (IData)(__PVT__t__BRA__28__KET__))) 
+                                  << 0x0000000cU) | 
+                                 (((((IData)(__PVT__t__BRA__27__KET__) 
+                                     << 3U) | ((IData)(__PVT__t__BRA__26__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(__PVT__t__BRA__25__KET__) 
+                                       << 1U) | (IData)(__PVT__t__BRA__24__KET__))) 
+                                  << 8U)) | ((((((IData)(__PVT__t__BRA__23__KET__) 
+                                                 << 3U) 
+                                                | ((IData)(__PVT__t__BRA__22__KET__) 
+                                                   << 2U)) 
+                                               | (((IData)(__PVT__t__BRA__21__KET__) 
+                                                   << 1U) 
+                                                  | (IData)(__PVT__t__BRA__20__KET__))) 
+                                              << 4U) 
+                                             | ((((IData)(__PVT__t__BRA__19__KET__) 
+                                                  << 3U) 
+                                                 | ((IData)(__PVT__t__BRA__18__KET__) 
+                                                    << 2U)) 
+                                                | (((IData)(__PVT__t__BRA__17__KET__) 
+                                                    << 1U) 
+                                                   | (IData)(__PVT__t__BRA__16__KET__))))) 
+                               << 0x00000010U) | ((
+                                                   (((((IData)(__PVT__t__BRA__15__KET__) 
+                                                       << 3U) 
+                                                      | ((IData)(__PVT__t__BRA__14__KET__) 
+                                                         << 2U)) 
+                                                     | (((IData)(__PVT__t__BRA__13__KET__) 
+                                                         << 1U) 
+                                                        | (IData)(__PVT__t__BRA__12__KET__))) 
+                                                    << 0x0000000cU) 
+                                                   | (((((IData)(__PVT__t__BRA__11__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(__PVT__t__BRA__10__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(__PVT__t__BRA__9__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(__PVT__t__BRA__8__KET__))) 
+                                                      << 8U)) 
+                                                  | ((((((IData)(__PVT__t__BRA__7__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(__PVT__t__BRA__6__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(__PVT__t__BRA__5__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(__PVT__t__BRA__4__KET__))) 
+                                                      << 4U) 
+                                                     | ((((IData)(__PVT__t__BRA__3__KET__) 
+                                                          << 3U) 
+                                                         | ((IData)(__PVT__t__BRA__2__KET__) 
+                                                            << 2U)) 
+                                                        | (((IData)(__PVT__t__BRA__1__KET__) 
+                                                            << 1U) 
+                                                           | (IData)(__PVT__t__BRA__0__KET__))))));
+    vlSelfRef.__PVT__t[1U] = (((((((((IData)(vlSelfRef.__PVT__t__BRA__63__KET__) 
+                                     << 3U) | ((IData)(vlSelfRef.__PVT__t__BRA__62__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(__PVT__t__BRA__61__KET__) 
+                                       << 1U) | (IData)(vlSelfRef.__PVT__t__BRA__60__KET__))) 
+                                  << 0x0000000cU) | 
+                                 (((((IData)(vlSelfRef.__PVT__t__BRA__59__KET__) 
+                                     << 3U) | ((IData)(__PVT__t__BRA__58__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(__PVT__t__BRA__57__KET__) 
+                                       << 1U) | (IData)(vlSelfRef.__PVT__t__BRA__56__KET__))) 
+                                  << 8U)) | ((((((IData)(vlSelfRef.__PVT__t__BRA__55__KET__) 
+                                                 << 3U) 
+                                                | ((IData)(__PVT__t__BRA__54__KET__) 
+                                                   << 2U)) 
+                                               | (((IData)(__PVT__t__BRA__53__KET__) 
+                                                   << 1U) 
+                                                  | (IData)(__PVT__t__BRA__52__KET__))) 
+                                              << 4U) 
+                                             | ((((IData)(vlSelfRef.__PVT__t__BRA__51__KET__) 
+                                                  << 3U) 
+                                                 | ((IData)(__PVT__t__BRA__50__KET__) 
+                                                    << 2U)) 
+                                                | (((IData)(__PVT__t__BRA__49__KET__) 
+                                                    << 1U) 
+                                                   | (IData)(vlSelfRef.__PVT__t__BRA__48__KET__))))) 
+                               << 0x00000010U) | ((
+                                                   (((((IData)(vlSelfRef.__PVT__t__BRA__47__KET__) 
+                                                       << 3U) 
+                                                      | ((IData)(__PVT__t__BRA__46__KET__) 
+                                                         << 2U)) 
+                                                     | (((IData)(__PVT__t__BRA__45__KET__) 
+                                                         << 1U) 
+                                                        | (IData)(vlSelfRef.__PVT__t__BRA__44__KET__))) 
+                                                    << 0x0000000cU) 
+                                                   | (((((IData)(__PVT__t__BRA__43__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(vlSelfRef.__PVT__t__BRA__41__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(vlSelfRef.__PVT__t__BRA__40__KET__))) 
+                                                      << 8U)) 
+                                                  | ((((((IData)(__PVT__t__BRA__39__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(__PVT__t__BRA__38__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(vlSelfRef.__PVT__t__BRA__37__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(__PVT__t__BRA__36__KET__))) 
+                                                      << 4U) 
+                                                     | ((((IData)(__PVT__t__BRA__35__KET__) 
+                                                          << 3U) 
+                                                         | ((IData)(__PVT__t__BRA__34__KET__) 
+                                                            << 2U)) 
+                                                        | (((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                                            << 1U) 
+                                                           | (IData)(__PVT__t__BRA__32__KET__))))));
+    vlSelfRef.__PVT__t[2U] = (0x0000000fU & ((((IData)(vlSelfRef.__PVT__t__BRA__67__KET__) 
+                                               << 3U) 
+                                              | ((IData)(vlSelfRef.__PVT__t__BRA__66__KET__) 
+                                                 << 2U)) 
+                                             | (((IData)(vlSelfRef.__PVT__t__BRA__65__KET__) 
+                                                 << 1U) 
+                                                | (IData)(vlSelfRef.__PVT__t__BRA__64__KET__))));
+}
+
+void Vaes_sbox___nba_sequent__TOP__aes__DOT__sb__DOT__gen_sbox__BRA__15__KET____DOT__sb__0(Vaes_sbox* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+          Vaes_sbox___nba_sequent__TOP__aes__DOT__sb__DOT__gen_sbox__BRA__15__KET____DOT__sb__0\n"); );
+    Vaes__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    auto& vlSelfRef = std::ref(*vlSelf).get();
+    // Locals
+    CData/*0:0*/ __PVT__t__BRA__61__KET__;
+    __PVT__t__BRA__61__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__58__KET__;
+    __PVT__t__BRA__58__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__57__KET__;
+    __PVT__t__BRA__57__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__54__KET__;
+    __PVT__t__BRA__54__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__53__KET__;
+    __PVT__t__BRA__53__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__52__KET__;
+    __PVT__t__BRA__52__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__50__KET__;
+    __PVT__t__BRA__50__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__49__KET__;
+    __PVT__t__BRA__49__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__46__KET__;
+    __PVT__t__BRA__46__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__45__KET__;
+    __PVT__t__BRA__45__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__43__KET__;
+    __PVT__t__BRA__43__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__39__KET__;
+    __PVT__t__BRA__39__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__38__KET__;
+    __PVT__t__BRA__38__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__36__KET__;
+    __PVT__t__BRA__36__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__35__KET__;
+    __PVT__t__BRA__35__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__34__KET__;
+    __PVT__t__BRA__34__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__32__KET__;
+    __PVT__t__BRA__32__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__31__KET__;
+    __PVT__t__BRA__31__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__30__KET__;
+    __PVT__t__BRA__30__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__28__KET__;
+    __PVT__t__BRA__28__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__27__KET__;
+    __PVT__t__BRA__27__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__26__KET__;
+    __PVT__t__BRA__26__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__25__KET__;
+    __PVT__t__BRA__25__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__24__KET__;
+    __PVT__t__BRA__24__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__23__KET__;
+    __PVT__t__BRA__23__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__22__KET__;
+    __PVT__t__BRA__22__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__21__KET__;
+    __PVT__t__BRA__21__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__20__KET__;
+    __PVT__t__BRA__20__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__19__KET__;
+    __PVT__t__BRA__19__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__18__KET__;
+    __PVT__t__BRA__18__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__17__KET__;
+    __PVT__t__BRA__17__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__16__KET__;
+    __PVT__t__BRA__16__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__15__KET__;
+    __PVT__t__BRA__15__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__14__KET__;
+    __PVT__t__BRA__14__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__13__KET__;
+    __PVT__t__BRA__13__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__12__KET__;
+    __PVT__t__BRA__12__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__11__KET__;
+    __PVT__t__BRA__11__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__10__KET__;
+    __PVT__t__BRA__10__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__9__KET__;
+    __PVT__t__BRA__9__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__8__KET__;
+    __PVT__t__BRA__8__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__7__KET__;
+    __PVT__t__BRA__7__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__6__KET__;
+    __PVT__t__BRA__6__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__5__KET__;
+    __PVT__t__BRA__5__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__4__KET__;
+    __PVT__t__BRA__4__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__3__KET__;
+    __PVT__t__BRA__3__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__2__KET__;
+    __PVT__t__BRA__2__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__1__KET__;
+    __PVT__t__BRA__1__KET__ = 0;
+    CData/*0:0*/ __PVT__t__BRA__0__KET__;
+    __PVT__t__BRA__0__KET__ = 0;
+    // Body
+    vlSelfRef.__PVT__y__BRA__8__KET__ = (1U & VL_REDXOR_32(
+                                                           (0x21000000U 
+                                                            & vlSymsp->TOP.aes__DOT__state_current[3U])));
+    __PVT__t__BRA__0__KET__ = (1U & VL_REDXOR_32((0x06000000U 
+                                                  & vlSymsp->TOP.aes__DOT__state_current[3U])));
+    vlSelfRef.__PVT__y__BRA__9__KET__ = (1U & VL_REDXOR_32(
+                                                           (0x09000000U 
+                                                            & vlSymsp->TOP.aes__DOT__state_current[3U])));
+    vlSelfRef.__PVT__y__BRA__14__KET__ = (1U & VL_REDXOR_32(
+                                                            (0x28000000U 
+                                                             & vlSymsp->TOP.aes__DOT__state_current[3U])));
+    vlSelfRef.__PVT__y__BRA__13__KET__ = (1U & VL_REDXOR_32(
+                                                            (0x41000000U 
+                                                             & vlSymsp->TOP.aes__DOT__state_current[3U])));
+    vlSelfRef.__PVT__y__BRA__1__KET__ = ((IData)(__PVT__t__BRA__0__KET__) 
+                                         ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                            >> 0x0000001fU));
+    vlSelfRef.__PVT__y__BRA__12__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__13__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__14__KET__));
+    vlSelfRef.__PVT__y__BRA__4__KET__ = (1U & ((IData)(vlSelfRef.__PVT__y__BRA__1__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                  >> 0x0000001bU)));
+    vlSelfRef.__PVT__y__BRA__2__KET__ = (1U & ((IData)(vlSelfRef.__PVT__y__BRA__1__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                  >> 0x00000018U)));
+    vlSelfRef.__PVT__y__BRA__5__KET__ = (1U & ((IData)(vlSelfRef.__PVT__y__BRA__1__KET__) 
+                                               ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                  >> 0x0000001eU)));
+    __PVT__t__BRA__1__KET__ = (1U & ((vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                      >> 0x0000001cU) 
+                                     ^ (IData)(vlSelfRef.__PVT__y__BRA__12__KET__)));
+    __PVT__t__BRA__5__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__4__KET__) 
+                               & (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                  >> 0x0000001fU));
+    vlSelfRef.__PVT__y__BRA__3__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__5__KET__) 
+                                         ^ (IData)(vlSelfRef.__PVT__y__BRA__8__KET__));
+    __PVT__t__BRA__8__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__5__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__1__KET__));
+    vlSelfRef.__PVT__y__BRA__15__KET__ = (1U & ((IData)(__PVT__t__BRA__1__KET__) 
+                                                ^ (
+                                                   vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                   >> 0x0000001dU)));
+    vlSelfRef.__PVT__y__BRA__20__KET__ = (1U & ((IData)(__PVT__t__BRA__1__KET__) 
+                                                ^ (
+                                                   vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                                   >> 0x00000019U)));
+    vlSelfRef.__PVT__y__BRA__6__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__15__KET__) 
+                                         ^ (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                            >> 0x0000001fU));
+    __PVT__t__BRA__2__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__12__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__15__KET__));
+    vlSelfRef.__PVT__y__BRA__10__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__15__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__0__KET__));
+    vlSelfRef.__PVT__y__BRA__11__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__20__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__9__KET__));
+    __PVT__t__BRA__3__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__3__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__6__KET__));
+    __PVT__t__BRA__6__KET__ = ((IData)(__PVT__t__BRA__5__KET__) 
+                               ^ (IData)(__PVT__t__BRA__2__KET__));
+    __PVT__t__BRA__15__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__8__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__10__KET__));
+    vlSelfRef.__PVT__y__BRA__7__KET__ = ((vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                          >> 0x0000001fU) 
+                                         ^ (IData)(vlSelfRef.__PVT__y__BRA__11__KET__));
+    vlSelfRef.__PVT__y__BRA__17__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__10__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__11__KET__));
+    __PVT__t__BRA__12__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__9__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__11__KET__));
+    vlSelfRef.__PVT__y__BRA__16__KET__ = ((IData)(__PVT__t__BRA__0__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__y__BRA__11__KET__));
+    __PVT__t__BRA__4__KET__ = ((IData)(__PVT__t__BRA__3__KET__) 
+                               ^ (IData)(__PVT__t__BRA__2__KET__));
+    __PVT__t__BRA__10__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__2__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__7__KET__));
+    __PVT__t__BRA__13__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__14__KET__) 
+                                & (IData)(vlSelfRef.__PVT__y__BRA__17__KET__));
+    __PVT__t__BRA__16__KET__ = ((IData)(__PVT__t__BRA__15__KET__) 
+                                ^ (IData)(__PVT__t__BRA__12__KET__));
+    __PVT__t__BRA__7__KET__ = ((IData)(vlSelfRef.__PVT__y__BRA__13__KET__) 
+                               & (IData)(vlSelfRef.__PVT__y__BRA__16__KET__));
+    __PVT__t__BRA__14__KET__ = ((IData)(__PVT__t__BRA__13__KET__) 
+                                ^ (IData)(__PVT__t__BRA__12__KET__));
+    __PVT__t__BRA__18__KET__ = ((IData)(__PVT__t__BRA__6__KET__) 
+                                ^ (IData)(__PVT__t__BRA__16__KET__));
+    __PVT__t__BRA__9__KET__ = ((IData)(__PVT__t__BRA__8__KET__) 
+                               ^ (IData)(__PVT__t__BRA__7__KET__));
+    __PVT__t__BRA__11__KET__ = ((IData)(__PVT__t__BRA__10__KET__) 
+                                ^ (IData)(__PVT__t__BRA__7__KET__));
+    __PVT__t__BRA__17__KET__ = ((IData)(__PVT__t__BRA__4__KET__) 
+                                ^ (IData)(__PVT__t__BRA__14__KET__));
+    __PVT__t__BRA__22__KET__ = ((IData)(__PVT__t__BRA__18__KET__) 
+                                ^ ((IData)(vlSelfRef.__PVT__y__BRA__10__KET__) 
+                                   ^ (IData)(vlSelfRef.__PVT__y__BRA__8__KET__)));
+    __PVT__t__BRA__19__KET__ = ((IData)(__PVT__t__BRA__9__KET__) 
+                                ^ (IData)(__PVT__t__BRA__14__KET__));
+    __PVT__t__BRA__20__KET__ = ((IData)(__PVT__t__BRA__11__KET__) 
+                                ^ (IData)(__PVT__t__BRA__16__KET__));
+    __PVT__t__BRA__21__KET__ = ((IData)(__PVT__t__BRA__17__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__y__BRA__20__KET__));
+    __PVT__t__BRA__23__KET__ = ((IData)(__PVT__t__BRA__19__KET__) 
+                                ^ ((IData)(vlSelfRef.__PVT__y__BRA__13__KET__) 
+                                   ^ (IData)(vlSelfRef.__PVT__y__BRA__16__KET__)));
+    __PVT__t__BRA__24__KET__ = (1U & ((IData)(__PVT__t__BRA__20__KET__) 
+                                      ^ ((vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                          >> 0x00000018U) 
+                                         ^ (IData)(vlSelfRef.__PVT__y__BRA__16__KET__))));
+    __PVT__t__BRA__25__KET__ = ((IData)(__PVT__t__BRA__21__KET__) 
+                                ^ (IData)(__PVT__t__BRA__22__KET__));
+    __PVT__t__BRA__26__KET__ = ((IData)(__PVT__t__BRA__21__KET__) 
+                                & (IData)(__PVT__t__BRA__23__KET__));
+    __PVT__t__BRA__30__KET__ = ((IData)(__PVT__t__BRA__23__KET__) 
+                                ^ (IData)(__PVT__t__BRA__24__KET__));
+    __PVT__t__BRA__31__KET__ = ((IData)(__PVT__t__BRA__22__KET__) 
+                                ^ (IData)(__PVT__t__BRA__26__KET__));
+    __PVT__t__BRA__27__KET__ = ((IData)(__PVT__t__BRA__24__KET__) 
+                                ^ (IData)(__PVT__t__BRA__26__KET__));
+    __PVT__t__BRA__32__KET__ = ((IData)(__PVT__t__BRA__31__KET__) 
+                                & (IData)(__PVT__t__BRA__30__KET__));
+    __PVT__t__BRA__28__KET__ = ((IData)(__PVT__t__BRA__25__KET__) 
+                                & (IData)(__PVT__t__BRA__27__KET__));
+    vlSelfRef.__PVT__t__BRA__33__KET__ = ((IData)(__PVT__t__BRA__32__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__24__KET__));
+    vlSelfRef.__PVT__t__BRA__29__KET__ = ((IData)(__PVT__t__BRA__28__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__22__KET__));
+    vlSelfRef.__PVT__z__BRA__2__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                         & (vlSymsp->TOP.aes__DOT__state_current[3U] 
+                                            >> 0x0000001fU));
+    __PVT__t__BRA__34__KET__ = ((IData)(__PVT__t__BRA__23__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__33__KET__));
+    __PVT__t__BRA__35__KET__ = ((IData)(__PVT__t__BRA__27__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__33__KET__));
+    vlSelfRef.__PVT__z__BRA__5__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__7__KET__));
+    vlSelfRef.__PVT__t__BRA__42__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__33__KET__));
+    __PVT__t__BRA__36__KET__ = ((IData)(__PVT__t__BRA__24__KET__) 
+                                & (IData)(__PVT__t__BRA__35__KET__));
+    vlSelfRef.__PVT__t__BRA__51__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__2__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__z__BRA__5__KET__));
+    vlSelfRef.__PVT__t__BRA__37__KET__ = ((IData)(__PVT__t__BRA__36__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__34__KET__));
+    __PVT__t__BRA__38__KET__ = ((IData)(__PVT__t__BRA__27__KET__) 
+                                ^ (IData)(__PVT__t__BRA__36__KET__));
+    vlSelfRef.__PVT__z__BRA__10__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__37__KET__) 
+                                          & (IData)(vlSelfRef.__PVT__y__BRA__3__KET__));
+    vlSelfRef.__PVT__t__BRA__44__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__37__KET__));
+    __PVT__t__BRA__39__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                & (IData)(__PVT__t__BRA__38__KET__));
+    vlSelfRef.__PVT__t__BRA__47__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__10__KET__) 
+                                          ^ ((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                             & (IData)(vlSelfRef.__PVT__y__BRA__4__KET__)));
+    __PVT__t__BRA__49__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__44__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__12__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__10__KET__));
+    vlSelfRef.__PVT__t__BRA__40__KET__ = ((IData)(__PVT__t__BRA__25__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__39__KET__));
+    vlSelfRef.__PVT__t__BRA__48__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__5__KET__) 
+                                          ^ ((IData)(vlSelfRef.__PVT__t__BRA__40__KET__) 
+                                             & (IData)(vlSelfRef.__PVT__y__BRA__5__KET__)));
+    vlSelfRef.__PVT__z__BRA__4__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__40__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__1__KET__));
+    __PVT__t__BRA__43__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__40__KET__));
+    vlSelfRef.__PVT__t__BRA__41__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__40__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__37__KET__));
+    vlSelfRef.__PVT__z__BRA__12__KET__ = ((IData)(__PVT__t__BRA__43__KET__) 
+                                          & (IData)(vlSelfRef.__PVT__y__BRA__13__KET__));
+    vlSelfRef.__PVT__z__BRA__3__KET__ = ((IData)(__PVT__t__BRA__43__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__16__KET__));
+    __PVT__t__BRA__45__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__t__BRA__41__KET__));
+    vlSelfRef.__PVT__t__BRA__56__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__12__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__48__KET__));
+    __PVT__t__BRA__50__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__2__KET__) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__12__KET__));
+    __PVT__t__BRA__53__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__44__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__15__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__3__KET__));
+    vlSelfRef.__PVT__z__BRA__7__KET__ = ((IData)(__PVT__t__BRA__45__KET__) 
+                                         & (IData)(vlSelfRef.__PVT__y__BRA__17__KET__));
+    vlSelfRef.__PVT__z__BRA__16__KET__ = ((IData)(__PVT__t__BRA__45__KET__) 
+                                          & (IData)(vlSelfRef.__PVT__y__BRA__14__KET__));
+    __PVT__t__BRA__57__KET__ = ((IData)(__PVT__t__BRA__50__KET__) 
+                                ^ (IData)(__PVT__t__BRA__53__KET__));
+    __PVT__t__BRA__54__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__11__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__7__KET__));
+    __PVT__t__BRA__52__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__7__KET__) 
+                                ^ ((IData)(vlSelfRef.__PVT__t__BRA__41__KET__) 
+                                   & (IData)(vlSelfRef.__PVT__y__BRA__10__KET__)));
+    vlSelfRef.__PVT__t__BRA__55__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__16__KET__) 
+                                          ^ ((IData)(vlSelfRef.__PVT__t__BRA__41__KET__) 
+                                             & (IData)(vlSelfRef.__PVT__y__BRA__8__KET__)));
+    __PVT__t__BRA__46__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__9__KET__)) 
+                                ^ (IData)(vlSelfRef.__PVT__z__BRA__16__KET__));
+    __PVT__t__BRA__61__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                 & (IData)(vlSelfRef.__PVT__y__BRA__2__KET__)) 
+                                ^ (IData)(__PVT__t__BRA__57__KET__));
+    vlSelfRef.__PVT__t__BRA__59__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__3__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__54__KET__));
+    vlSelfRef.__PVT__t__BRA__60__KET__ = ((IData)(__PVT__t__BRA__46__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__57__KET__));
+    __PVT__t__BRA__58__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__4__KET__) 
+                                ^ (IData)(__PVT__t__BRA__46__KET__));
+    vlSelfRef.__PVT__t__BRA__64__KET__ = ((IData)(vlSelfRef.__PVT__z__BRA__4__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__59__KET__));
+    vlSelfRef.__PVT__t__BRA__63__KET__ = ((IData)(__PVT__t__BRA__49__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__58__KET__));
+    vlSelfRef.__PVT__t__BRA__62__KET__ = ((IData)(__PVT__t__BRA__52__KET__) 
+                                          ^ (IData)(__PVT__t__BRA__58__KET__));
+    vlSelfRef.__PVT__t__BRA__66__KET__ = (((IData)(vlSelfRef.__PVT__t__BRA__37__KET__) 
+                                           & (IData)(vlSelfRef.__PVT__y__BRA__6__KET__)) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__63__KET__));
+    vlSelfRef.__PVT__t__BRA__65__KET__ = ((IData)(__PVT__t__BRA__61__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__62__KET__));
+    vlSelfRef.__VdfgRegularize_h224e5c7b_0_0 = ((IData)(__PVT__t__BRA__53__KET__) 
+                                                ^ (IData)(vlSelfRef.__PVT__t__BRA__66__KET__));
+    vlSelfRef.__PVT__t__BRA__67__KET__ = ((IData)(vlSelfRef.__PVT__t__BRA__64__KET__) 
+                                          ^ (IData)(vlSelfRef.__PVT__t__BRA__65__KET__));
+    vlSelfRef.__PVT__t[0U] = (((((((((IData)(__PVT__t__BRA__31__KET__) 
+                                     << 3U) | ((IData)(__PVT__t__BRA__30__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(vlSelfRef.__PVT__t__BRA__29__KET__) 
+                                       << 1U) | (IData)(__PVT__t__BRA__28__KET__))) 
+                                  << 0x0000000cU) | 
+                                 (((((IData)(__PVT__t__BRA__27__KET__) 
+                                     << 3U) | ((IData)(__PVT__t__BRA__26__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(__PVT__t__BRA__25__KET__) 
+                                       << 1U) | (IData)(__PVT__t__BRA__24__KET__))) 
+                                  << 8U)) | ((((((IData)(__PVT__t__BRA__23__KET__) 
+                                                 << 3U) 
+                                                | ((IData)(__PVT__t__BRA__22__KET__) 
+                                                   << 2U)) 
+                                               | (((IData)(__PVT__t__BRA__21__KET__) 
+                                                   << 1U) 
+                                                  | (IData)(__PVT__t__BRA__20__KET__))) 
+                                              << 4U) 
+                                             | ((((IData)(__PVT__t__BRA__19__KET__) 
+                                                  << 3U) 
+                                                 | ((IData)(__PVT__t__BRA__18__KET__) 
+                                                    << 2U)) 
+                                                | (((IData)(__PVT__t__BRA__17__KET__) 
+                                                    << 1U) 
+                                                   | (IData)(__PVT__t__BRA__16__KET__))))) 
+                               << 0x00000010U) | ((
+                                                   (((((IData)(__PVT__t__BRA__15__KET__) 
+                                                       << 3U) 
+                                                      | ((IData)(__PVT__t__BRA__14__KET__) 
+                                                         << 2U)) 
+                                                     | (((IData)(__PVT__t__BRA__13__KET__) 
+                                                         << 1U) 
+                                                        | (IData)(__PVT__t__BRA__12__KET__))) 
+                                                    << 0x0000000cU) 
+                                                   | (((((IData)(__PVT__t__BRA__11__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(__PVT__t__BRA__10__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(__PVT__t__BRA__9__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(__PVT__t__BRA__8__KET__))) 
+                                                      << 8U)) 
+                                                  | ((((((IData)(__PVT__t__BRA__7__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(__PVT__t__BRA__6__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(__PVT__t__BRA__5__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(__PVT__t__BRA__4__KET__))) 
+                                                      << 4U) 
+                                                     | ((((IData)(__PVT__t__BRA__3__KET__) 
+                                                          << 3U) 
+                                                         | ((IData)(__PVT__t__BRA__2__KET__) 
+                                                            << 2U)) 
+                                                        | (((IData)(__PVT__t__BRA__1__KET__) 
+                                                            << 1U) 
+                                                           | (IData)(__PVT__t__BRA__0__KET__))))));
+    vlSelfRef.__PVT__t[1U] = (((((((((IData)(vlSelfRef.__PVT__t__BRA__63__KET__) 
+                                     << 3U) | ((IData)(vlSelfRef.__PVT__t__BRA__62__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(__PVT__t__BRA__61__KET__) 
+                                       << 1U) | (IData)(vlSelfRef.__PVT__t__BRA__60__KET__))) 
+                                  << 0x0000000cU) | 
+                                 (((((IData)(vlSelfRef.__PVT__t__BRA__59__KET__) 
+                                     << 3U) | ((IData)(__PVT__t__BRA__58__KET__) 
+                                               << 2U)) 
+                                   | (((IData)(__PVT__t__BRA__57__KET__) 
+                                       << 1U) | (IData)(vlSelfRef.__PVT__t__BRA__56__KET__))) 
+                                  << 8U)) | ((((((IData)(vlSelfRef.__PVT__t__BRA__55__KET__) 
+                                                 << 3U) 
+                                                | ((IData)(__PVT__t__BRA__54__KET__) 
+                                                   << 2U)) 
+                                               | (((IData)(__PVT__t__BRA__53__KET__) 
+                                                   << 1U) 
+                                                  | (IData)(__PVT__t__BRA__52__KET__))) 
+                                              << 4U) 
+                                             | ((((IData)(vlSelfRef.__PVT__t__BRA__51__KET__) 
+                                                  << 3U) 
+                                                 | ((IData)(__PVT__t__BRA__50__KET__) 
+                                                    << 2U)) 
+                                                | (((IData)(__PVT__t__BRA__49__KET__) 
+                                                    << 1U) 
+                                                   | (IData)(vlSelfRef.__PVT__t__BRA__48__KET__))))) 
+                               << 0x00000010U) | ((
+                                                   (((((IData)(vlSelfRef.__PVT__t__BRA__47__KET__) 
+                                                       << 3U) 
+                                                      | ((IData)(__PVT__t__BRA__46__KET__) 
+                                                         << 2U)) 
+                                                     | (((IData)(__PVT__t__BRA__45__KET__) 
+                                                         << 1U) 
+                                                        | (IData)(vlSelfRef.__PVT__t__BRA__44__KET__))) 
+                                                    << 0x0000000cU) 
+                                                   | (((((IData)(__PVT__t__BRA__43__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(vlSelfRef.__PVT__t__BRA__42__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(vlSelfRef.__PVT__t__BRA__41__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(vlSelfRef.__PVT__t__BRA__40__KET__))) 
+                                                      << 8U)) 
+                                                  | ((((((IData)(__PVT__t__BRA__39__KET__) 
+                                                         << 3U) 
+                                                        | ((IData)(__PVT__t__BRA__38__KET__) 
+                                                           << 2U)) 
+                                                       | (((IData)(vlSelfRef.__PVT__t__BRA__37__KET__) 
+                                                           << 1U) 
+                                                          | (IData)(__PVT__t__BRA__36__KET__))) 
+                                                      << 4U) 
+                                                     | ((((IData)(__PVT__t__BRA__35__KET__) 
+                                                          << 3U) 
+                                                         | ((IData)(__PVT__t__BRA__34__KET__) 
+                                                            << 2U)) 
+                                                        | (((IData)(vlSelfRef.__PVT__t__BRA__33__KET__) 
+                                                            << 1U) 
+                                                           | (IData)(__PVT__t__BRA__32__KET__))))));
+    vlSelfRef.__PVT__t[2U] = (0x0000000fU & ((((IData)(vlSelfRef.__PVT__t__BRA__67__KET__) 
+                                               << 3U) 
+                                              | ((IData)(vlSelfRef.__PVT__t__BRA__66__KET__) 
+                                                 << 2U)) 
+                                             | (((IData)(vlSelfRef.__PVT__t__BRA__65__KET__) 
+                                                 << 1U) 
+                                                | (IData)(vlSelfRef.__PVT__t__BRA__64__KET__))));
+}
