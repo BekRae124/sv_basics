@@ -1,6 +1,7 @@
 package aes_pkg;
 
     function automatic logic [127:0] to_state(input logic [127:0] data);
+    //testing function
         logic [7:0] b [0:15];
 
         for (int i = 0; i < 16; i++)
@@ -18,7 +19,7 @@ package aes_pkg;
         logic [7:0] result;
 
         if (a[7]) begin
-            result = (a << 1) ^ 8'h1b; // Polynomial reduction
+            result = (a << 1) ^ 8'h1b;
         end else begin
             result = a << 1;
         end
